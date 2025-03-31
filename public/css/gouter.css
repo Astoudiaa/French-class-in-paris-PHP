@@ -1,0 +1,470 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+    background: linear-gradient(145deg, #f5f0e6 0%, #e6d7c3 100%);
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Header élégant avec animation */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: linear-gradient(135deg, #f0e9e1 0%, #ebce98 100%);
+    border-bottom: 1px solid rgba(218, 165, 32, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 60%);
+    animation: shimmer 8s infinite linear;
+    pointer-events: none;
+}
+
+@keyframes shimmer {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.logo img {
+    height: 120px;
+    width: auto;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.logo img:hover {
+    transform: translateY(-5px) rotate(3deg);
+    box-shadow: 0 8px 20px rgba(218, 165, 32, 0.4);
+}
+
+.title {
+    font-family: "Italianno", "Tangerine", cursive;
+    font-size: 60px;
+    color: #b8860b;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateY(5px);
+}
+
+
+.title::before, .title::after {
+    content: '♦';
+    font-size: 18px;
+    color: #DAA520;
+    margin: 0 15px;
+    vertical-align: middle;
+    opacity: 0.7;
+}
+
+.reserve-button {
+    border: none;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #DAA520 0%, #B8860B 100%);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(218, 165, 32, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.reserve-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #B8860B 0%, #DAA520 100%);
+    z-index: -1;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.reserve-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(218, 165, 32, 0.5);
+}
+
+.reserve-button:hover::before {
+    opacity: 1;
+}
+
+.reserve-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(218, 165, 32, 0.5);
+}
+
+/* Navigation élégante */
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-size: 17px;
+    font-weight: 500;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.navigation a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #DAA520, transparent);
+    transition: width 0.4s ease;
+}
+
+.navigation a:hover {
+    color: #DAA520;
+}
+
+.navigation a:hover::before {
+    width: 100%;
+}
+
+.navigation a.active {
+    color: #DAA520;
+    font-weight: 600;
+}
+
+.navigation a.active::before {
+    width: 100%;
+    background: linear-gradient(to right, transparent, #DAA520, transparent);
+}
+
+/* Bannière de titre avec effet */
+.title-banner {
+    background: linear-gradient(135deg, #f5f0e6 0%, #f0e6d2 100%);
+    font-family: "Italianno", cursive;
+    font-size: 60px;
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 40px auto;
+    width: 80%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(218, 165, 32, 0.2);
+}
+
+.title-banner::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(45deg, transparent, rgba(218, 165, 32, 0.1), transparent);
+    animation: shine 3s infinite linear;
+    z-index: 0;
+}
+
+@keyframes shine {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+h1 {
+    font-family: 'Tangerine', 'Brush Script MT', cursive;
+    font-size: 48px;
+    color: #5a4a2f;
+    font-weight: normal;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+/* Galerie de photos spectaculaire */
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 30px 40px 50px;
+    perspective: 1000px;
+}
+
+
+/*.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px 40px 50px;
+    perspective: 1000px;
+   
+}*/
+
+
+.gallery img {
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    position: relative;
+    overflow: hidden;
+    filter: saturate(1.1) brightness(1.05);
+}
+
+.gallery img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.4) 0%, transparent 80%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+
+.gallery img:hover {
+    transform: scale(1.12) translateZ(20px) rotateY(5deg);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 0 15px rgba(218, 165, 32, 0.5);
+    filter: saturate(1.3) brightness(1.1) contrast(1.1);
+    z-index: 2;
+    border-color: rgba(218, 165, 32, 0.5);
+}
+
+.gallery img:hover::before {
+    opacity: 1;
+}
+
+/* Boîtes d'information luxueuses */
+.info-box {
+    background: linear-gradient(145deg, #f8f4ec 0%, #f0e6d2 100%);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 0 40px 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    position: relative;
+    border: 1px solid rgba(218, 165, 32, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.info-title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #5a4a2f;
+    letter-spacing: 0.5px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.info-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #DAA520, transparent);
+}
+
+.info-price {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #b8860b;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.info-details {
+    line-height: 1.8;
+    font-size: 16px;
+    color: #555;
+}
+
+.promo-box {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #e6d7c3;
+    padding: 20px;
+    margin: 30px auto;
+    text-align: center;
+    border-radius: 12px;
+    width: 80%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.promo-box::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(218, 165, 32, 0.1) 0%, transparent 70%);
+    animation: pulse 8s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.05); opacity: 0.7; }
+}
+
+.promo-box p {
+    position: relative;
+    z-index: 1;
+    font-weight: 500;
+    color: #5a4a2f;
+}
+
+/* Responsive design élégant */
+@media (max-width: 992px) {
+    .title-banner {
+        width: 90%;
+    }
+    
+    .gallery {
+        gap: 20px;
+    }
+    
+    .gallery img {
+        width: 240px;
+        height: 180px;
+    }
+    
+    .info-box, .promo-box {
+        margin: 0 25px 25px;
+        padding: 25px;
+    }
+    
+    .promo-box {
+        width: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .logo img {
+        height: 100px;
+    }
+    
+    .title {
+        font-size: 42px;
+        margin: 15px 0;
+    }
+    
+    .reserve-button {
+        padding: 10px 24px;
+        font-size: 15px;
+    }
+    
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 0;
+    }
+    
+    .gallery img {
+        width: 85%;
+        height: auto;
+        aspect-ratio: 3/2;
+    }
+    
+    .title-banner {
+        width: 90%;
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 36px;
+    }
+    
+    .info-box, .promo-box {
+        width: 90%;
+        margin: 0 auto 20px;
+        padding: 20px;
+    }
+}
+
+/* Animation générale de chargement de page */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.container {
+    animation: fadeIn 1s ease forwards;
+}
+
+.gallery img:nth-child(1) { animation: fadeIn 0.6s ease 0.2s forwards; opacity: 0; }
+.gallery img:nth-child(2) { animation: fadeIn 0.6s ease 0.4s forwards; opacity: 0; }
+.gallery img:nth-child(3) { animation: fadeIn 0.6s ease 0.6s forwards; opacity: 0; }
+.gallery img:nth-child(4) { animation: fadeIn 0.6s ease 0.8s forwards; opacity: 0; }
+
+/* Polices personnalisées */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Tangerine:wght@400;700&display=swap');
