@@ -151,7 +151,7 @@ body {
   
   .name h1 {
     font-family: "Italianno", cursive;
-    font-size: 30px;
+    font-size: 40px;
     color: #b8860b;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     margin: 0;
@@ -165,17 +165,49 @@ body {
     padding: 0 2rem;
   }
   .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
     display: flex;
-    align-items: center;
-    gap: 2rem;
+    align-items: center; /* Aligne le texte et l'image verticalement */
+    gap: 30px; /* Espacement entre le texte et l’image */
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
 }
-
 .content {
     flex: 1;
+    background: #faf3e0; /* Couleur douce et élégante */
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Merriweather', serif;
+    text-align: justify;
 }
+
+
+.content h1 {
+    font-size: 26px;
+    color: #8b5e3c; /* Couleur chaleureuse */
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #4a3f35;
+}
+
+/* Gestion de l’image */
+.image-container img {
+    width: 350px; /* Ajuste la taille de l’image */
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.conteneur img {
+    width: 300px; /* Ajuste la taille de l'image */
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
 
 h1 {
 font-size: 1.5rem;

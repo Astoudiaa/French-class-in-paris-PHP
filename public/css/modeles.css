@@ -157,72 +157,182 @@ body {
     font-weight: normal;
   }
 
-  .language-dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .language-dropdown {
-    display: inline-block;
-  }
-  
-  #language-select {
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-
-  /* Variables */
-:root {
-    --primary-color: #C9AA5B;
-    --primary-light: #E5D7B7;
-    --text-color: #333333;
-    --text-light: #666666;
-    --background-light: #F9F9F9;
-    --white: #FFFFFF;
-    --border-color: #E0E0E0;
-    --shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    --transition: all 0.3s ease;
+/* Section Réalisations */
+.realisations {
+    background-color: var(--background-light);
+    padding: 60px 0;
+    text-align: center;
 }
 
-/* Base */
-* {
+.realisations h1 {
+    font-size: 42px;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    padding: 2rem;
+    font-size: 1.1rem;
+    font-family: 'Playfair Display', serif;
+    margin: -4rem auto 0;
+    padding: 2rem;
+    text-align: justify;
+    position: relative;
+    color: black;
+    font-family: 'Playfair Display', serif;
+}
+
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
-    color: var(--text-color);
+    background-color: #f8f9fa;
+    color: #333;
     line-height: 1.6;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 500;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 40px 20px;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-    transition: var(--transition);
+.courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+.course-card {
+    flex: 1;
+    min-width: 45%;
+    max-width: 550px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
+
+.course-header {
+    padding: 20px 25px 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.course-header i {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #b8860b;
+}
+
+h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.course-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+/* Style spécifique pour l'image des cours en ligne */
+.course-card:nth-child(2) .course-image img {
+    width: 120%; /* Réduit la largeur de l'image */
+    height: 120%; /* Réduit la hauteur de l'image */
+    object-fit: contain; /* Maintient les proportions */
+}
+
+.course-image img:hover {
+    transform: scale(1.05);
+}
+
+.course-content {
+    padding: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    color: #5d6570;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.feature-list {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.feature-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    color: #5d6570;
+    font-size: 14px;
+}
+
+.feature-list li i {
+    min-width: 20px;
+    margin-right: 15px;
+    color: #b8860b;
+}
+
+.cta-button {
+    background-color: #b8860b;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+    align-self: center;
+}
+
+.cta-button:hover {
+    background-color: #a07608;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+    .courses-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .course-card {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .course-image {
+        height: 300px;
+    }
+}
+
 
 /* Boutons */
 .btn-gold {
@@ -241,353 +351,18 @@ img {
     color: var(--primary-color);
 }
 
-/* Header & Navigation */
-
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  /* Variables */
+  :root {
+    --primary-color: #C9AA5B;
+    --primary-light: #E5D7B7;
+    --text-color: #333333;
+    --text-light: #666666;
+    --background-light: #F9F9F9;
+    --white: #FFFFFF;
+    --border-color: #E0E0E0;
+    --shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    --transition: all 0.3s ease;
 }
-
-.logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--primary-color);
-}
-
-.menu {
-    display: flex;
-    list-style: none;
-}
-
-.menu li {
-    margin-left: 30px;
-}
-
-.menu a {
-    font-weight: 500;
-    position: relative;
-}
-
-.menu a:hover, .menu a.active {
-    color: var(--primary-color);
-}
-
-.menu a.active::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: var(--primary-color);
-}
-
-/* Section Réalisations */
-.realisations {
-    background-color: var(--background-light);
-    padding: 60px 0;
-    text-align: center;
-}
-
-.realisations h1 {
-    font-size: 42px;
-    margin-bottom: 16px;
-}
-
-.subtitle {
-    font-size: 18px;
-    color: var(--text-light);
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-/* Section Info Cours */
-.cours-info {
-    padding: 80px 0;
-}
-
-.cours-content {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-
-.cours-text {
-    flex: 1;
-}
-
-.cours-image {
-    flex: 1;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
-}
-
-.cours-text h2 {
-    font-size: 36px;
-    margin-bottom: 16px;
-}
-
-.cours-text p {
-    margin-bottom: 24px;
-    font-size: 17px;
-}
-
-.stats {
-    display: flex;
-    margin: 30px 0;
-    gap: 30px;
-}
-
-.stat-item {
-    text-align: center;
-}
-
-.stat-item i {
-    color: var(--primary-color);
-    font-size: 24px;
-    margin-bottom: 8px;
-}
-
-.stat-item h3 {
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 4px;
-}
-
-.stat-item p {
-    margin-bottom: 0;
-    color: var(--text-light);
-}
-
-/* Section Tarifs */
-.tarifs {
-    background-color: var(--background-light);
-    padding: 80px 0;
-    text-align: center;
-}
-
-.tarifs h2 {
-    font-size: 36px;
-    margin-bottom: 16px;
-}
-
-.tarifs-container {
-    display: flex;
-    flex: 1; /* Permet de répartir l'espace de manière égale */
-    justify-content: space-between;
-    max-width: 1200px; /* Ajuste la largeur max */
-    gap: 30px; /* Espacement entre les cartes */
-}
-
-.tarif-card {
-    background-color: var(--white);
-    border-radius: 8px;
-    box-shadow: var(--shadow);
-    padding: 40px;
-    flex: 1;
-    max-width: 500px;
-    text-align: left;
-    transition: var(--transition);
-}
-
-.tarif-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.tarif-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.tarif-header h3 {
-    font-size: 22px;
-}
-
-.tarif-icon {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--primary-light);
-    color: var(--primary-color);
-    border-radius: 50%;
-    font-size: 20px;
-}
-
-.tarif-details {
-    margin-bottom: 30px;
-}
-
-.tarif-item {
-    padding: 15px 0;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.tarif-item:last-child {
-    border-bottom: none;
-}
-
-.tarif-name {
-    display: block;
-    font-weight: 500;
-    margin-bottom: 8px;
-}
-
-.tarif-price {
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--primary-color);
-}
-
-.tarif-note {
-    display: block;
-    font-size: 14px;
-    color: var(--text-light);
-    margin-top: 5px;
-}
-
-.tarif-card .btn-gold {
-    width: 100%;
-    text-align: center;
-}
-
-
-/* Tarifs en groupe */
-.tarifs-groupe {
-    background-color: var(--background-light);
-    padding: 80px 0;
-    text-align: center;
-}
-
-.tarifs-groupe .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    justify-content: center;
-}
-
-.tarifs-groupe h2 {
-    font-size: 36px;
-    margin-bottom: 16px;
-}
-
-.tarifs-groupe .tarif-card {
-    background-color: var(--white);
-    border-radius: 8px;
-    box-shadow: var(--shadow);
-    padding: 40px;
-    flex: 1;
-    max-width: 500px;
-    text-align: left;
-    transition: var(--transition);
-}
-
-/* Section Présentation */
-.presentation {
-    margin: 40px auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.presentation-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap; /* Permet aux images de s’adapter si l’écran est petit */
-}
-
-.presentation-image {
-    width: 30%; /* Chaque image occupe 30% de la largeur */
-    height: auto; /* Garde les proportions d’origine */
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.presentation-image:hover {
-    transform: scale(1.05); /* Petit zoom au survol */
-}
-.image-intro {
-    margin-top: 30px;
-    font-size: 18px;
-    font-style: italic;
-    color: #444;
-    max-width: 90%; /* Augmente la largeur du texte à 90% */
-    margin: 20px 4%; /* Réduit la marge à gauche et à droite à 5% */
-    line-height: 1.8;
-    font-family: 'Playfair Display', serif;
-    text-align: justify; /* Justifie le texte */
-}
-
-.tarifs-groupe .tarif-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.tarifs-groupe .tarif-header h3 {
-    font-size: 22px; }
-
-.tarifs-groupe .tarif-icon {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--primary-light);
-    color: var(--primary-color);
-    border-radius: 50%;
-    font-size: 20px;
-}
-
-.tarifs-groupe .tarif-details {
-    margin-bottom: 30px;
-}
-
-.tarifs-groupe .tarif-item {
-    padding: 15px 0;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.tarifs-groupe .tarif-name {
-    font-size: 1.1em;
-    color: #333;
-}
-
-.tarifs-groupe .tarif-price {
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--primary-color);
-}
-
-.tarifs-groupe .tarif-note {
-    display: block;
-    font-size: 14px;
-    color: var(--text-light);
-    margin-top: 5px;}
-
-.tarifs-groupe .btn-gold {
-    width: 100%;
-    text-align: center;
-}
-
-.tarifs-groupe .btn-gold:hover {
-    background-color: #e6b800;
-}
-
 
 /* Pourquoi section */
 .pourquoi {
@@ -635,7 +410,7 @@ nav {
 
 /* Contact section */
 .contact {
-    background-color: var(--background-light);
+    background-color: var(--primary-color: #C9AA5B)
     padding: 80px 0;
     text-align: center;
 }
@@ -844,3 +619,4 @@ nav {
         max-width: 100%;
     }
 }
+

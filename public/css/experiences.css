@@ -150,12 +150,32 @@ body {
 
 .name h1 {
   font-family: "Italianno", cursive;
-  font-size: 30px;
+  font-size: 40px;
   color: #b8860b;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   margin: 0;
   font-weight: normal;
 }
+
+
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+}
+
 
 /* Main content styles */
 main {
@@ -163,10 +183,74 @@ main {
   margin: 2rem auto;
   padding: 0 2rem;
 }
+  /* Variables */
+  :root {
+    --primary-color: #C9AA5B;
+    --primary-light: #E5D7B7;
+    --text-color: #333333;
+    --text-light: #666666;
+    --background-light: #F9F9F9;
+    --white: #FFFFFF;
+    --border-color: #E0E0E0;
+    --shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    --transition: all 0.3s ease;
+}
+
+
+
+
+
+/* Section Réalisations */
+.realisations {
+  background-color: var(--background-light);
+  padding: 60px 0;
+  text-align: center;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.realisations h1 {
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 22px;
+  color: black;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Importation de polices élégantes */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap');
+
+.description-cours {
+
+  font-size: 18px;
+  line-height: 1.8;
+
+  max-width: 700px;
+  margin: 30px auto;
+  font-family: 'Merriweather', serif;
+}
+
+.description-cours p {
+  font-weight: 500;
+  text-align: justify;
+}
+
+
+
+
+
+
 .text-container { 
   font-family: "Italianno", cursive;
-    font-style: normal;
-    font-size: 50px;
+  font-style: normal;
+  font-size: 50px;
     display: flex;
     justify-content: center;
  
@@ -181,73 +265,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
   font-weight: 500;
-}
-
-
-.text-acceuil {
-  font-family: 'Playfair Display', 'serif';
-  color: #4a4a4a;
-  background-color: #f0e9e1; /* Couleur nude, douce et élégante */
-  padding: 50px;
-  max-width: 900px;
-  margin: 60px auto;
-  line-height: 1.8;
-}
-
-.text-acceuil h1 {
-  font-family: 'Playfair Display', 'serif';
-  font-size: 3rem;
-  color: #2b2b2b;
-  text-align: center;
-  font-weight: 0;
-  margin-bottom: 20px;
-}
-
-.text-acceuil h2 {
-  font-family: 'Playfair Display', 'serif';
-  font-size: 1.5rem;
-  color: #7c7c7c;
-  text-align: center;
-  font-weight: 300;
-  margin-bottom: 25px;
-}
-
-.text-acceuil p {
-  font-size: 1.1rem;
-  color: #666;
-  text-align: justify;
-  margin-bottom: 25px;
-  padding-right: 15px;
-}
-
-.text-acceuil p strong {
-  font-weight: 600;
-  font-family: 'Playfair Display', 'serif';
-  color: #c6a65e; /* Un doré subtil */
-}
-
-.text-acceuil p em {
-  font-style: italic;
-  font-family: 'Playfair Display', 'serif';
-  color: #d1b18c; /* Une couleur dorée plus claire */
-}
-
-.text-acceuil hr {
-  font-family: 'Playfair Display', 'serif';
-  border: 0;
-  height: 1px;
-  background: linear-gradient(to right, #e0d6c4, #f2e8d4, #e0d6c4); /* Ligne subtile, dégradé doux */
-  margin: 30px 0;
-}
-
-.accroche {
- font-family: 'Playfair Display', 'serif';
-  font-size: 1.3rem;
-  text-align: center;
-  font-weight: 600;
-  color: #2b2b2b;
-  margin-top: 35px;
-  letter-spacing: 1px;
 }
 
 /* Responsive design */
@@ -281,11 +298,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .content-container {
   display: flex;
-  
+
   gap: 40px;
   align-items: center; /* texte en haut au milieu de l'image*/
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 50px;
  }
 
  .footer-experiences {
@@ -297,11 +314,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Footer */
 .footer {
-    background: #FAF3EC;
-    padding: 60px 20px;
-    text-align: center;
-    color: #5A4632;
+  padding: 60px 20px;
+  text-align: center;
+  color: #5A4632;
+  position: relative;
+  top: -48px; /* monte de 22px vers le haut */
 }
+
 
 .footer-title {
     font-size: 26px;
@@ -389,4 +408,3 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: underline;
 }
 
-xx

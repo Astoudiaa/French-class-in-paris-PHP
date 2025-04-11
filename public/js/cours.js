@@ -38,3 +38,5 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial subtitle
     typeWriter(subtitles[0], subtitleElement);
 });
+
+

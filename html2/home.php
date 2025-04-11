@@ -20,7 +20,7 @@
       <h1 class="hero-title">Apprenez le français à Paris</h1>
       <p class="hero-subtitle">Cours personnalisés et expériences culturelles uniques</p>
 
-      <button class="hero-button" onclick="window.location.href='/html2/reservation.php'">Réserver</button>
+    
     </div>
   </section>
 
@@ -28,7 +28,7 @@
     <div class="quote-section">
       <div class="quote"> "Ma vocation, votre apprentissage" </div>
       <div class="quote-ligne">"Ma passion, votre progression" </div>
-      <div class="author">— Dalila Raposo</div>
+      <div class="author">Dalila Raposo</div>
     </div>
 
     <div class="gallery">
@@ -40,20 +40,21 @@
 
       <div class="gallery-item">
         <img src="../public/img/cours-individuel.jpeg" alt="cours individuel" class="gallery-image">
-        <h3 class="gallery-title"><a href="/services">Nos Services</a></h3>
+        <h3 class="gallery-title"><a href="/services">Cours personnalisés</a></h3>
         <button class="detail-button"><a href="/services">En savoir plus→</a></button>
       </div>
 
       <div class="gallery-item">
-        <img src="../public/img/cours-petit-dejeuner.jpeg" alt="Session d'apprentissage" class="gallery-image" id="image">
-        <h3 class="gallery-title"><a href="/experiences">Expériences unique</a></h3>
+        <img src="../public/img/cours-petit-dejeuner.jpeg" alt="Session d'apprentissage" class="gallery-image" id="img">
+        <h3 class="gallery-title"><a href="/experiences">Expériences culturelles</a></h3>
         <button class="detail-button"><a href="/experiences">En savoir plus→</a></button>
       </div>
     </div>
   </main>
 
-  <!-- Inclure le footer-->
-  <%- include('footer') %>
+    
+  <!-- Inclure le footer -->
+  <?php include 'footer.php'; ?>
 
 
   <script src="../public/js/home.js"></script>

@@ -150,7 +150,7 @@ body {
   
   .name h1 {
     font-family: "Italianno", cursive;
-    font-size: 40px;
+ font-size: 40px;
     color: #b8860b;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     margin: 0;
@@ -183,9 +183,16 @@ body {
     --text-light: #666666;
     --background-light: #F9F9F9;
     --white: #FFFFFF;
+    --cards-bg: #FFFFFF;
     --border-color: #E0E0E0;
+    --border-radius: 8px;
     --shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     --transition: all 0.3s ease;
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 32px;
+    --font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 /* Base */
@@ -336,6 +343,73 @@ nav {
     font-size: 17px;
 }
 
+
+
+
+
+
+/* Section Info Cours */
+.cours-infos {
+    padding: 80px 0;
+    background-color: var(--background-light);
+
+}
+.cours-contents {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-direction: row-reverse; /* Inverse l'ordre des éléments */
+}
+
+.cours-texts {
+    flex: 1;
+}
+
+.cours-images {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.cours-texts h2 {
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.cours-texts p {
+    margin-bottom: 24px;
+    font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .stats {
     display: flex;
     margin: 30px 0;
@@ -377,10 +451,9 @@ nav {
 
 .tarifs-container {
     display: flex;
-    flex: 1; /* Permet de répartir l'espace de manière égale */
-    justify-content: space-between;
-    max-width: 1200px; /* Ajuste la largeur max */
-    gap: 30px; /* Espacement entre les cartes */
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
 }
 
 .tarif-card {
@@ -492,42 +565,6 @@ nav {
     transition: var(--transition);
 }
 
-/* Section Présentation */
-.presentation {
-    margin: 40px auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.presentation-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap; /* Permet aux images de s’adapter si l’écran est petit */
-}
-
-.presentation-image {
-    width: 30%; /* Chaque image occupe 30% de la largeur */
-    height: auto; /* Garde les proportions d’origine */
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.presentation-image:hover {
-    transform: scale(1.05); /* Petit zoom au survol */
-}
-.image-intro {
-    margin-top: 30px;
-    font-size: 18px;
-    font-style: italic;
-    color: #444;
-    max-width: 90%; /* Augmente la largeur du texte à 90% */
-    margin: 20px 4%; /* Réduit la marge à gauche et à droite à 5% */
-    line-height: 1.8;
-    font-family: 'Playfair Display', serif;
-    text-align: justify; /* Justifie le texte */
-}
 
 .tarifs-groupe .tarif-header {
     display: flex;
@@ -635,7 +672,7 @@ nav {
 
 /* Contact section */
 .contact {
-    background-color: var(--background-light);
+    background-color: var(--primary-color: #C9AA5B)
     padding: 80px 0;
     text-align: center;
 }
@@ -706,7 +743,47 @@ nav {
     color: var(--primary-color);
 }
 
+ 
+  
 
+  .containerz {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+  }
+  
+
+  
+   
+  /* Sections communes */
+  section {
+    margin-bottom: var(--spacing-lg);
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow);
+  }
+  
+  
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: var(--spacing-sm);
+  }
+  
+  .section-header i {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-right: var(--spacing-sm);
+  }
+  
+  .section-header h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
 /* Témoignages */
 .testimonials-section .section-header {
     flex-direction: column;
@@ -764,10 +841,9 @@ nav {
   /* Pied de page */
   footer {
     text-align: center;
-    padding: var(--spacing-md) 0;
-    background-color: white;
-    margin-top: var(--spacing-lg);
-    color: #666;
+    padding: 20px;
+    background-color: rgba(212, 175, 55, 0.1);
+    margin-top: 50px;
   }
   
   /* Responsive */
@@ -776,71 +852,3 @@ nav {
         grid-template-columns: 1fr;
     }
   }
-
-  footer {
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(212, 175, 55, 0.1);
-    margin-top: 50px;
-  }
-  
-
-.social-icons {
-    display: flex;
-    gap: 15px;
-}
-
-.social-icons a {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    transition: var(--transition);
-}
-
-.social-icons a:hover {
-    background-color: var(--primary-color);
-    transform: translateY(-3px);
-}
-
-.copyright {
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    text-align: center;
-    font-size: 14px;
-    color: #999;
-}
-
-/* Media Queries */
-@media (max-width: 992px) {
-    .cours-content {
-        flex-direction: column;
-    }
-    
-    .tarifs-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .contact-content {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 768px) {
-    .menu {
-        display: none;
-    }
-    
-    .stats {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .tarif-card, .avantage-item {
-        max-width: 100%;
-    }
-}

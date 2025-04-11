@@ -49,21 +49,21 @@
                 <div class="pricing-box">
                     <h2>Tarifs individuels en Présentiel</h2>
                     <p>1h15 : 60 €</p>
-                    <p>Forfait 10 heures (10x1h15) : 570 € (soit 57€ de l'heure et quart)</p>
-                    <p>Forfait 20 heures (20x1h15) : 1100 € (soit 55€ de l'heure et quart)</p>
+                    <p>Forfait 10 heures (10x1h15) : 570 € (soit 57€  l'heure et quart)</p>
+                    <p>Forfait 20 heures (20x1h15) : 1100 € (soit 55€ l'heure et quart)</p>
                 </div>
                 
                 <div class="pricing-box">
                     <h2>Tarifs individuels en Visio</h2>
                     <p>1h15 : 50 €</p>
-                    <p>Forfait 10 heures (10x1h15) : 480 € (soit 48€ de l'heure et quart)</p>
-                    <p>Forfait 20 heures (20x1h15) : 940 € (soit 47€ de l'heure et quart)</p>
+                    <p>Forfait 10 heures (10x1h15) : 480 € (soit 48€ l'heure et quart)</p>
+                    <p>Forfait 20 heures (20x1h15) : 940 € (soit 47€  l'heure et quart)</p>
                 </div>
             </div>
         </div>
         
     
 
-    <script src="/js/cours.js"></script>
+    <script src="/public/js/cours.js"></script>
 </body>
 </html>

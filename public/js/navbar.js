@@ -40,3 +40,28 @@ menuToggle.addEventListener('click', () => {
 menuToggle.addEventListener('click', () => {
     navigation.classList.toggle('responsive');
 });
+/* Additional JavaScript needed for mobile menu toggle */
+ 
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navigation = document.querySelector('.navigation');
+  
+  menuToggle.addEventListener('click', function() {
+    navigation.classList.toggle('active');
+    
+    // Optional: animate the menu toggle
+    const spans = menuToggle.querySelectorAll('span');
+    spans.forEach(span => span.classList.toggle('active'));
+  });
+  
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+    if (!navigation.contains(event.target) && !menuToggle.contains(event.target) && navigation.classList.contains('active')) {
+      navigation.classList.remove('active');
+      
+      // Reset menu toggle animation
+      const spans = menuToggle.querySelectorAll('span');
+      spans.forEach(span => span.classList.remove('active'));
+    }
+  });
+});

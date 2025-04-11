@@ -84,6 +84,7 @@ body {
   background: linear-gradient(to right, transparent, #b8860b, transparent);
 }
 
+
 /* Button styles */
 .reserve-button {
   border: none;
@@ -155,7 +156,7 @@ body {
 
 .name h1 {
   font-family: "Italianno", cursive;
-  font-size: 30px;
+  font-size: 40px;
   color: #b8860b;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   margin: 0;
@@ -183,14 +184,12 @@ body {
 
 .text {
   text-align: center;
-  border-radius: 8px;
-  padding: 40px 20px 20px;
+padding: 40px 20px 20px;
   color: black;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
   text-align: center;
   position: relative;
-  background-color: white;
+ 
 }
 
 .text h1 {
@@ -205,109 +204,141 @@ body {
   color: #b8860b;
   margin-top: 0;
 }
-
+.parcourss {  padding: 2rem;
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+  margin: -2rem auto 0;
+  padding: 2rem;
+  text-align: justify;
+  position: relative;
+}
 /* Bio and text sections */
 .bio {
-  max-width: 1000px;
-  margin: 3rem auto 0;
   padding: 2rem;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  text-align: center;
+  font-family: 'Playfair Display', serif;
+  margin: -2rem auto 0;
+  padding: 2rem;
+  text-align: justify;
   position: relative;
   font-family: 'Playfair Display', serif;
 }
 
 .bio p {
   font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 0;
+  color: black;
+  margin-bottom: 30;
 }
 
 .bio::after {
   content: "";
   position: absolute;
-  top: 75%;
-  left: -160px;
+  top: 45px; /* Augmente la valeur pour déplacer l'image vers le bas */
+  left: -290px;
   width: 295px;
   height: 330px;
-  border-radius: 5px;
+  background-image: url("../img/Dalila-profil.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  margin: -1rem auto 0;
+  transition: top 0.3s ease; /* Optionnel pour lisser le changement */
+}
+
+
+
+.presentation {
+  padding: 2rem;
+  text-align: justify; /* Justifie le texte */
+  font-family: 'Playfair Display', serif;
+  transform: translateX(-5px); /* Décale de 50px vers la droite */
+  margin: -2rem auto 0; /* 5rem de marge à gauche */
+  position: relative; /* Nécessaire pour que le z-index fonctionne */
+
+}
+.presentation:after {
+  content: "";
+  position: absolute;
+  top: 120%; /* Descend l'image encore plus bas */
+  right: -160px;
+  width: 295px;
+  height: 330px;
   background-image: url("../img/Dalila.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  z-index: 1;
+  z-index: 1; /* L'image devant le texte */
 }
 
-.presentation {
+
+.parcours {
   padding: 2rem;
+  text-align: justify; /* Justifie le texte */
   font-family: 'Playfair Display', serif;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  transform: translateX(50px); /* Décale de 50px vers la droite */
-  margin: 3rem 0 3rem 5rem; /* 5rem de marge à gauche */
+  transform: translateX(-5px); /* Décale de 50px vers la droite */
+  margin: -2rem auto 0; /* 5rem de marge à gauche */
+  position: relative; /* Nécessaire pour que le z-index fonctionne */
 }
 
-.presentation:after {
-  content: "";
-  position: absolute;
-  top: 90%; /* Descend l'image */
-  right: -160px;
-  width: 295px;
-  height: 330px;
-  border-radius: 5px;
-  background-image: url("../img/Dalila-profil.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  z-index: 1;
+
+
+.parcours-bis{
+ 
+    max-width: 1000px;
+    margin: -1rem auto 0;
+    padding: 2rem;
+    text-align: justify; /* Justifie le texte */
+    position: relative;
+    margin-left: -180px;
+    font-family: 'Playfair Display', serif;
+   
 }
 
-.presentation p {
-  font-size: 1rem;
-  text-align: justify;
-  color: #444;
-}
 
-/* Photo styles */
-.photo-container {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  margin: 0 auto 2rem;
-  overflow: hidden;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 6px 20px rgba(184, 134, 11, 0.15);
-}
-
-.photo-classe {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.photo-classe:hover {
-  transform: scale(1.02);
-}
-
-/* Parcours sections */
-.parcours, .parcours-bis, .parcours-pro, .parcours-perso, .parcours-perso-bis {
-  background-color: white;
-  font-family: 'Playfair Display', serif;
-  padding: 30px;
-  font-size: 18px;
-  line-height: 1.6;
-  border-radius: 8px;
-  margin-bottom: 30px;
+.parcours-pro {
+  max-width: 1000px;
+  margin: -1rem auto 0;
+  padding: 2rem;
+  text-align: justify; /* Justifie le texte */
   position: relative;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  margin-left: -180px;
+  font-family: 'Playfair Display', serif;
+  flex: 2; /* Le texte prend tout l'espace disponible */
+  line-height: 1,1; /* Réduit l'espace entre les lignes */
 }
+
+
+.parcours-pro p {
+  text-align: justify;
+  margin-bottom: 15px; /* Optionnel : ajoute un espacement sous le paragraphe */
+}
+
+
+
+.parcours-perso{
+ 
+  max-width: 1000px;
+  margin: 3rem auto 0;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  font-family: 'Playfair Display', serif;
+
+}
+
+.parcours-perso-bis {
+ 
+  max-width: 1000px;
+  margin: -1rem auto 0;
+  padding: 2rem;
+  text-align: justify; /* Justifie le texte */
+  position: relative;
+  margin-left: -180px;
+  font-family: 'Playfair Display', serif;
+}
+
+
+
+
 
 .parcours-pro ul {
   list-style-type: none;
@@ -377,7 +408,211 @@ footer {
     max-width: 100%;
   }
 
-  .parcours, .parcours-bis, .parcours-pro, .parcours-perso, .parcours-perso-bis {
+  .bio::after .parcours, .parcours-bis, .parcours-pro, .parcours-perso, .parcours-perso-bis {
     padding: 20px;
+  }
+}
+
+
+/* Responsive CSS - Include this after your main CSS file */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .header {
+    padding: 10px 20px;
+  }
+  
+  .name h1 {
+    font-size: 32px;
+  }
+  
+  .navigation {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 70%;
+    background: linear-gradient(135deg, #f0e6dd 0%, #e7d0ae 100%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    transition: right 0.3s ease;
+    z-index: 100;
+  }
+  
+  .navigation.active {
+    right: 0;
+  }
+  
+  .navigation a {
+    margin: 15px 0;
+    font-size: 20px;
+  }
+  
+  .menu-toggle {
+    display: flex;
+    z-index: 101;
+  }
+  
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+  
+  main {
+    padding: 0 15px;
+  }
+  
+  .text {
+    padding: 30px 10px 10px;
+  }
+  
+  .text-propos {
+    font-size: 36px;
+  }
+  
+  /* Modified to preserve images but adjust layout */
+  .bio,.bio:after, .presentation, .parcours, .parcours-bis, .parcours-pro, .parcours-perso, .parcours-perso-bis {
+    padding: 1rem;
+    margin: 2rem auto;
+    transform: none;
+  }
+  
+  /* Instead of hiding images, reposition them */
+  .bio {
+    padding-top: 350px; /* Make space for the image above */
+    position: relative;
+  }
+  
+  .bio::after {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 320px;
+    position: absolute;
+  }
+  
+  .presentation {
+    padding-bottom: 350px; /* Make space for the image below */
+    position: relative;
+  }
+  
+  .presentation:after {
+    top: auto;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    width: 250px;
+    height: 320px;
+    position: absolute;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .header {
+    padding: 12px 25px;
+  }
+  
+  .navigation {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 60%;
+    background: linear-gradient(135deg, #f0e6dd 0%, #e7d0ae 100%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    transition: right 0.3s ease;
+    z-index: 100;
+  }
+  
+  .navigation.active {
+    right: 0;
+  }
+  
+  .navigation a {
+    margin: 12px 0;
+    font-size: 18px;
+  }
+  
+  .name h1 {
+    font-size: 36px;
+  }
+  
+  /* Keep images but reposition */
+  .bio {
+    display: flex;
+    flex-direction: column;
+    margin-top: 240px;
+    position: relative;
+  }
+  
+  .bio::after {
+    top: -220px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 220px;
+  }
+  
+  .presentation {
+    margin-bottom: 240px;
+    position: relative;
+  }
+  
+  .presentation:after {
+    top: auto;
+    bottom: -220px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 200px;
+    height: 220px;
+  }
+  
+  .parcours-bis, .parcours-pro, .parcours-perso-bis {
+    margin-left: 0;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  /* Position bio image slightly differently but keep it visible */
+  .bio {
+    margin-left: 260px;
+    position: relative;
+  }
+  
+  .bio::after {
+    width: 250px;
+    height: 280px;
+    left: -260px;
+  }
+  
+  /* Position presentation image */
+  .presentation {
+    margin-right: 260px;
+    position: relative;
+  }
+  
+  .presentation:after {
+    width: 250px;
+    height: 280px;
+    right: -260px;
+  }
+  
+  .parcours-bis, .parcours-pro, .parcours-perso-bis {
+    margin-left: 0;
   }
 }

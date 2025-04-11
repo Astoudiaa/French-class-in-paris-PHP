@@ -16,11 +16,11 @@
 
     <div class="container">
         <h1>Contactez-nous</h1>
-        <p class="subtitle">Nous sommes à votre écoute pour toute question concernant nos cours de français et expériences culturelles</p>
+        <p class="subtitle">Nous sommes à votre écoute pour toute question concernant nos cours de français et nos expériences culturelles</p>
         <div class="content-wrapper">
             <div class="contact-form">
                 <h2>Envoyez-nous un message</h2>
-                <form method="POST" action="/src/contact.php">
+                <form method="POST" action="/html2/contact.php">
                     <div class="form-group">
                         <input type="text" id="fullname" name="fullname" placeholder="Nom complet" required>
                     </div>
@@ -67,7 +67,8 @@
     </div>
 
     <!-- Inclure le footer -->
-    <%- include('footer') %>
+    <?php include 'footer.php'; ?>
+
 
 </body>
 </html>

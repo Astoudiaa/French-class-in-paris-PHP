@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -5,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DFrench Class in Paris - Dalila RAPOSO</title>
    
-    <link rel="stylesheet" href="/css/petit-dejeuner.css">
+    <link rel="stylesheet" href="/public/css/petit-dejeuner.css">
     
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
@@ -31,15 +32,15 @@
             </div>
             <div class="image-slideshow">
                 <div class="slideshow-container">
-                    <img src="img/cours-petit-dejeuner.jpeg" alt="Petit déjeuner parisien 1" class="slide">
-                    <img src="/img/petit-dejeuner.jpeg" alt="Petit déjeuner parisien 2" class="slide">
-                    <img src="img/veranda-exterieur.jpeg" alt="Petit déjeuner parisien 3" class="slide">
-                    <img src="/img/cours-petit-dejeuner.jpeg" alt="Petit déjeuner parisien 4" class="slide">
-                    <img src="img/petit-dejeuner.jpeg" alt="Petit déjeuner parisien 5" class="slide">
-                    <img src="img/veranda-exterieur.jpeg" alt="Petit déjeuner parisien 6" class="slide">
-                    <img src="/img/cours-petit-dejeuner.jpeg" alt="Petit déjeuner parisien 1" class="slide">
-                    <img src="/img/petit-dejeuner.jpeg" alt="Petit déjeuner parisien 2" class="slide">
-                    <img src="/img/veranda-exterieur.jpeg" alt="Petit déjeuner parisien 3" class="slide">
+                    <img src="/public/img/cours-petit-dejeuner.jpeg" alt="Petit déjeuner parisien 1" class="slide">
+                    <img src="/public/img/petit-dejeuner.jpeg" alt="Petit déjeuner parisien 2" class="slide">
+                    <img src="/public/img/veranda-exterieur.jpeg" alt="Petit déjeuner parisien 3" class="slide">
+                    <img src="/public/img/cours-petit-dejeuner.jpeg" alt="Petit déjeuner parisien 4" class="slide">
+                    <img src="/public/img/petit-dejeuner.jpeg" alt="Petit déjeuner parisien 5" class="slide">
+                    <img src="/public/img/veranda-exterieur.jpeg" alt="Petit déjeuner parisien 6" class="slide">
+                    <img src="/public/img/cours-petit-dejeuner.jpeg" alt="Petit déjeuner parisien 1" class="slide">
+                    <img src="/public/img/petit-dejeuner.jpeg" alt="Petit déjeuner parisien 2" class="slide">
+                    <img src="/public/img/veranda-exterieur.jpeg" alt="Petit déjeuner parisien 3" class="slide">
                 </div>
             </div>
         </div>
@@ -60,7 +61,7 @@
 
     
     </main>
-<script src="./js/petit-dej.js"></script>
+<script src="/public/js/petit-dej.js"></script>
 
 </body>
 </html>

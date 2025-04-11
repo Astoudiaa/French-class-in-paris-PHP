@@ -1,366 +1,354 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>French Class in Paris - Dalila RAPOSO</title>
-  <link rel="stylesheet" href="../public/css/reservation.css?v=1.1">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italianno&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Italiana&family=Italianno&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation de Service</title>
+    <link rel="stylesheet" href="../public/css/reservation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italianno&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Italiana&family=Italianno&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-
 <?php include 'header.php'; ?>
+    <div class="container">
+        <div class="booking-form">
+            <!-- Section de choix de service -->
+            <div class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-hand-pointer accent-color"></i>
+                    Choisissez votre service
+                </h2>
+                <div class="service-selection">
+                    <div class="form-group">
+                        <select id="service" name="service" required>
+                            <option value="">Sélectionnez un objet</option>
+                            <option value="presentiel">Cours de français en présentiel</option>
+                            <option value="enligne">Cours de français en ligne</option>
 
-    <section>
-        <div class="container">
-            <h1>Découvrez nos services</h1>
-            <p>Réservez votre cours ou expérience culturelle en quelques clics</p>
+                            <option value="gouter">Cours de français autour d'un goûter</option>
+                            <option value="petit-dejeuner">Cours de français autour d'un petit déjeuner</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Options tarifaires -->
+                <div class="tarif-options" id="tarif-presentiel" style="display: none;">
+                    <h3>En présentiel à Paris</h3>
+                    <div class="tarif-cards">
+                        <div class="tarif-card" data-price="60" data-total="60">
+                            <h4>1h15</h4>
+                            <p class="price">60 €</p>
+                        </div>
+                        <div class="tarif-card" data-price="57" data-total="570">
+                            <h4>Forfait 10 heures (10x1h15)</h4>
+                            <p class="price">570 €</p>
+                            <p class="price-details">soit 57€ de l'heure et quart</p>
+                        </div>
+                        <div class="tarif-card" data-price="55" data-total="1100">
+                            <h4>Forfait 20 heures (20x1h15)</h4>
+                            <p class="price">1100 €</p>
+                            <p class="price-details">soit 55€ de l'heure et quart</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarif-options" id="tarif-enligne" style="display: none;">
+                    <h3>En visio (Zoom)</h3>
+                    <div class="tarif-cards">
+                        <div class="tarif-card" data-price="50" data-total="50">
+                            <h4>1h15</h4>
+                            <p class="price">50 €</p>
+                        </div>
+                        <div class="tarif-card" data-price="48" data-total="480">
+                            <h4>Forfait 10 heures (10x1h15)</h4>
+                            <p class="price">480 €</p>
+                            <p class="price-details">soit 48€ de l'heure et quart</p>
+                        </div>
+                        <div class="tarif-card" data-price="47" data-total="940">
+                            <h4>Forfait 20 heures (20x1h15)</h4>
+                            <p class="price">940 €</p>
+                            <p class="price-details">soit 47€ de l'heure et quart</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarif-options" id="tarif-groupe-presentiel" style="display: none;">
+                    <h3>Cours en petit groupe (3-4 personnes) - En présentiel à Paris</h3>
+                    <div class="tarif-cards">
+                        <div class="tarif-card" data-price="30" data-total="30" data-per-person="true">
+                            <h4>1h15</h4>
+                            <p class="price">30 € par personne</p>
+                        </div>
+                        <div class="tarif-card" data-price="28" data-total="280" data-per-person="true">
+                            <h4>Forfait 10 heures (10x1h15)</h4>
+                            <p class="price">280 € par personne</p>
+                            <p class="price-details">soit 28€ par personne</p>
+                        </div>
+                        <div class="tarif-card" data-price="27" data-total="540" data-per-person="true">
+                            <h4>Forfait 20 heures (20x1h15)</h4>
+                            <p class="price">540 € par personne</p>
+                            <p class="price-details">soit 27€ par personne</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarif-options" id="tarif-groupe-enligne" style="display: none;">
+                    <h3>Cours en petit groupe (3-4 personnes) - En visio (Zoom)</h3>
+                    <div class="tarif-cards">
+                        <div class="tarif-card" data-price="26" data-total="26" data-per-person="true">
+                            <h4>1h15</h4>
+                            <p class="price">26 € par personne</p>
+                        </div>
+                        <div class="tarif-card" data-price="25" data-total="250" data-per-person="true">
+                            <h4>Forfait 10 heures (10x1h15)</h4>
+                            <p class="price">250 € par personne</p>
+                            <p class="price-details">soit 25€ par personne</p>
+                        </div>
+                        <div class="tarif-card" data-price="24" data-total="480" data-per-person="true">
+                            <h4>Forfait 20 heures (20x1h15)</h4>
+                            <p class="price">480 € par personne</p>
+                            <p class="price-details">soit 24€ par personne</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarif-options" id="tarif-gouter" style="display: none;">
+                    <h3>Cours de français autour d'un goûter</h3>
+                    <div class="tarif-cards">
+                        <div class="tarif-card" data-price="115" data-total="115">
+                            <h4>2h</h4>
+                            <p class="price">115 €</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarif-options" id="tarif-petit-dejeuner" style="display: none;">
+                    <h3>Cours de français autour d'un petit déjeuner</h3>
+                    <div class="tarif-cards">
+                        <div class="tarif-card" data-price="115" data-total="115">
+                            <h4>2h</h4>
+                            <p class="price">115 €</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section date et heure -->
+            <div class="section">
+                <h2 class="section-title">
+                    <i class="far fa-calendar-alt accent-color"></i>
+                    Date et heure
+                </h2>
+                <div class="date-time-row">
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <div class="input-with-icon">
+                            <input type="date" id="date" placeholder="jj/mm/aaaa">
+                            <i class="far fa-calendar-alt"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Heure</label>
+                        <div class="select-wrapper">
+                            <select id="time">
+                                <option value="" selected disabled>Sélectionnez une heure</option>
+                                 <option value="9:00">9:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">16:00</option>
+                            </select>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section participants -->
+            <div class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-users accent-color"></i>
+                    Participants
+                </h2>
+                <div class="participants-counter">
+                    <button class="counter-btn decrease">-</button>
+                    <span class="counter-value" id="participantsCount">1</span>
+                    <button class="counter-btn increase">+</button>
+                </div>
+            </div>
+
+            <!-- Section paiement -->
+            <div class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-credit-card accent-color"></i>
+                    Paiement
+                </h2>
+                <div class="payment-summary">
+                    <div class="summary-row">
+                        <div class="summary-label">Service</div>
+                        <div class="summary-value">-</div>
+                    </div>
+                    <div class="summary-row">
+                        <div class="summary-label">Forfait</div>
+                        <div class="summary-value">-</div>
+                    </div>
+                    <div class="summary-row">
+                        <div class="summary-label">Date</div>
+                        <div class="summary-value">-</div>
+                    </div>
+                    <div class="summary-row">
+                        <div class="summary-label">Heure</div>
+                        <div class="summary-value">-</div>
+                    </div>
+                    <div class="summary-row">
+                        <div class="summary-label">Participants</div>
+                        <div class="summary-value">1</div>
+                    </div>
+                    <div class="summary-row total">
+                        <div class="summary-label">Total</div>
+                        <div class="summary-value">-</div>
+                    </div>
+                </div>
+                <button class="payment-btn">
+                    <i class="fas fa-credit-card"></i>
+                    Procéder au paiement
+                </button>
+            </div>
         </div>
-    </section>
-
-    <main class="container">
-        <section class="services-section">
-            <div class="section-header">
-                <i class="fas fa-graduation-cap"></i>
-                <h2>Choisissez votre service</h2>
-            </div>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-user-graduate"></i>
-                    </div>
-                    <h3>Cours Particulier - presentiel</h3>
-                    <div class="service-details">
-                        <p><i class="far fa-clock"></i> 1h15</p>
-                        <p><i class="fas fa-euro-sign"></i> 60€</p>
-                    </div>
-                </div>
-            
-             
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-user-graduate"></i>
-                        </div>
-                        <h3>Forfait 10 heures - presentiel</h3>
-                        <div class="service-details">
-                            <p><i class="far fa-clock"></i> 10x1h15</p>
-                            <p><i class="fas fa-euro-sign"></i> 570€</p>
-                            <p><i class="fas fa-euro-sign"></i> 57€/h</p>
-                        </div>
-                    </div>
-
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-user-graduate"></i>
-                        </div>
-                        <h3>Forfait 20 heures - presentiel </h3>
-                        <div class="service-details">
-                            <p><i class="far fa-clock"></i> 20x1h15</p>
-                            <p><i class="fas fa-euro-sign"></i> 1100€</p>
-                            <p><i class="fas fa-euro-sign"></i> 55€/h</p>
-                        </div>
-                    </div>
-
-
-
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-video"></i>
-                            <i class="fas fa-user-graduate"></i>
-                        </div>
-                        <h3>Forfait 10 heures - Visio </h3>
-                        <div class="service-details">
-                            <p><i class="far fa-clock"></i> 10x1h15</p>
-                            <p><i class="fas fa-euro-sign"></i> 480€</p>
-                            <p><i class="fas fa-euro-sign"></i> 48€/h</p>
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-video"></i>
-                            <i class="fas fa-user-graduate"></i>
-                        </div>
-                        <h3>Forfait 20 heures - Visio</h3>
-                        <div class="service-details">
-                            <p><i class="far fa-clock"></i> 20x1h15</p>
-                            <p><i class="fas fa-euro-sign"></i> 940€</p>
-                            <p><i class="fas fa-euro-sign"></i> 47€/h</p>
-                        </div>
-                    </div>
-
-
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-users"></i>
-                            <i class="fas fa-video"></i>
-                            
-                    </div>
-                    <h3>Cours en Groupe- visio</h3>
-                    <div class="service-details">
-                        <p><i class="far fa-clock"></i> 1h15</p>
-                        <p><i class="fas fa-euro-sign"></i> 30€</p>
-                    </div>
-                </div>
-    
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Cours en Groupe ( 3-4 personnes) visio</h3>
-                    <div class="service-details">
-                        <p><i class="far fa-clock"></i> 1h15</p>
-                        <p><i class="fas fa-euro-sign"></i> 30€</p>
-                    </div>
-                </div>
-                
-
-
-
-
-
-
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-coffee"></i>
-                    </div>
-                    <h3>Petit-déjeuner Culturel</h3>
-                    <div class="service-details">
-                        <p><i class="far fa-clock"></i> 2h</p>
-                        <p><i class="fas fa-euro-sign"></i> 45€</p>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-coffee"></i>
-                    </div>
-                    <h3>Gouter Culturel</h3>
-                    <div class="service-details">
-                        <p><i class="far fa-clock"></i> 2h</p>
-                        <p><i class="fas fa-euro-sign"></i> 45€</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="date-time-section">
-            <div class="section-header">
-                <i class="far fa-calendar-alt"></i>
-                <h2>Date et heure</h2>
-            </div>
-            
-            <div class="date-time-grid">
-                <div class="form-group">
-                    <label for="date">Date</label>
-                    <input type="date" id="date" placeholder="jj/mm/aaaa">
-                </div>
-                
-                <div class="form-group">
-                    <label for="time">Heure</label>
-                    <select id="time">
-                        <option selected disabled>Sélectionnez une heure</option>
-                        <option>09:00</option>
-                        <option>10:00</option>
-                        <option>11:00</option>
-                        <option>14:00</option>
-                        <option>15:00</option>
-                        <option>16:00</option>
-                        <option>17:00</option>
-                    </select>
-                </div>
-            </div>
-        </section>
-        
-        <section class="participants-section">
-            <div class="section-header">
-                <i class="fas fa-user-friends"></i>
-                <h2>Participants</h2>
-            </div>
-            
-            <div class="participants-counter">
-                <button class="counter-btn minus-btn">-</button>
-                <span class="counter-value">1</span>
-                <button class="counter-btn plus-btn">+</button>
-            </div>
-        </section>
-
-        <section class="participants-section">
-            <div class="section-header">
-                <i class="fas fa-envelope"></i>
-                <h2>Entrez votre email</h2>
-            </div>
-            
-            <div class="form-group">
-                <label for="email">Adresse email</label>
-                <input type="email" id="email" placeholder="Entrez votre email" required>
-            </div>
-        </section>
-        
-        <section class="payment-section">
-            <div class="section-header">
-                <i class="fas fa-credit-card"></i>
-                <h2>Paiement</h2>
-            </div>
-            
-            <div class="payment-summary">
-                <div class="summary-row">
-                    <span>Service</span>
-                    <span>-</span>
-                </div>
-                <div class="summary-row">
-                    <span>Date</span>
-                    <span>-</span>
-                </div>
-                <div class="summary-row">
-                    <span>Heure</span>
-                    <span>-</span>
-                </div>
-                <div class="summary-row">
-                    <span>Participants</span>
-                    <span>1</span>
-                </div>
-                <div class="summary-row total-row">
-                    <span>Total</span>
-                    <span>-</span>
-                </div>
-            </div>
-            
-            <button class="payment-btn">
-                <i class="fas fa-credit-card"></i>
-                Procéder au paiement
-            </button>
-        </section>
-        
-        <section class="testimonials-section">
-            <div class="section-header">
-                <h2>Témoignages</h2>
-                <p>Ce que nos étudiants disent de leur expérience</p>
-            </div>
-            
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-profile">
-                        <div class="testimonial-avatar"></div>
-                        <div class="testimonial-info">
-                            <h3>Sophie Anderson</h3>
-                            <p>Expatriée américaine</p>
-                        </div>
-                    </div>
-                    <blockquote>
-                        "Les cours m'ont permis d'atteindre rapidement un niveau me permettant de travailler en français. L'approche personnalisée a fait toute la différence."
-                    </blockquote>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="testimonial-profile">
-                        <div class="testimonial-avatar"></div>
-                        <div class="testimonial-info">
-                            <h3>Marco Rossi</h3>
-                            <p>Étudiant en ligne</p>
-                        </div>
-                    </div>
-                    <blockquote>
-                        "Même à distance, j'ai pu progresser efficacement grâce aux cours en ligne. Le suivi est excellent et les exercices sont très pertinents."
-                    </blockquote>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="testimonial-profile">
-                        <div class="testimonial-avatar"></div>
-                        <div class="testimonial-info">
-                            <h3>Yuki Tanaka</h3>
-                            <p>Participante aux événements culturels</p>
-                        </div>
-                    </div>
-                    <blockquote>
-                        "Les petits-déjeuners culturels sont une excellente façon de pratiquer le français dans un cadre authentique et convivial."
-                    </blockquote>
-                </div>
-            </div>
-        </section>
-    </main>
-    
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Services de Cours de Français. Tous droits réservés.</p>
-        </div>
-    </footer>
+    </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded'), function() {
-            // Service card selection
-            const serviceCards = document.querySelectorAll('.service-card');
-            serviceCards.forEach(card => {
-                card.addEventListener('click', function() {
-                    serviceCards.forEach(c => c.classList.remove('selected'));
-                    this.classList.add('selected');
-                    
-                    // Update payment summary
-                    const serviceName = this.querySelector('h3').textContent;
-                    const servicePrice = this.querySelector('.service-details p:last-child').textContent;
-                    
-                    document.querySelector('.payment-summary .summary-row:first-child span:last-child').textContent = serviceName;
-                    updateTotal();
+        document.addEventListener('DOMContentLoaded', function() {
+            const serviceSelect = document.getElementById('service');
+            const tarifSections = document.querySelectorAll('.tarif-options');
+            let selectedTarif = null;
+            
+            // Gestion du changement de service
+            serviceSelect.addEventListener('change', function() {
+                const selectedService = this.value;
+                
+                // Cacher tous les tarifs
+                tarifSections.forEach(section => {
+                    section.style.display = 'none';
                 });
-            });
-        }
-            // Participant counter
-            const minusBtn = document.querySelector('.minus-btn');
-            const plusBtn = document.querySelector('.plus-btn');
-            const counterValue = document.querySelector('.counter-value');
-            
-            minusBtn.addEventListener('click', function() {
-                let value = parseInt(counterValue.textContent);
-                if (value > 1) {
-                    counterValue.textContent = value - 1;
-                    document.querySelector('.payment-summary .summary-row:nth-child(4) span:last-child').textContent = value - 1;
-                    updateTotal();
+                
+                // Afficher le tarif correspondant au service sélectionné
+                if (selectedService === 'presentiel') {
+                    document.getElementById('tarif-presentiel').style.display = 'block';
+                } else if (selectedService === 'enligne') {
+                    document.getElementById('tarif-enligne').style.display = 'block';
+                } else if (selectedService === 'gouter') {
+                    document.getElementById('tarif-gouter').style.display = 'block';
+                } else if (selectedService === 'petit-dejeuner') {
+                    document.getElementById('tarif-petit-dejeuner').style.display = 'block';
+                } else if (selectedService === 'experience') {
+                    // Supposons que pour l'expérience culturelle, on montre les options de groupe
+                    document.getElementById('tarif-groupe-presentiel').style.display = 'block';
+                    document.getElementById('tarif-groupe-enligne').style.display = 'block';
                 }
-            });
-            
-            plusBtn.addEventListener('click', function() {
-                let value = parseInt(counterValue.textContent);
-                counterValue.textContent = value + 1;
-                document.querySelector('.payment-summary .summary-row:nth-child(4) span:last-child').textContent = value + 1;
+                
+                // Mettre à jour le résumé de paiement
+                document.querySelector('.summary-row:nth-child(1) .summary-value').textContent = 
+                    this.options[this.selectedIndex].text;
+                
+                // Réinitialiser la sélection de tarif
+                document.querySelectorAll('.tarif-card').forEach(card => {
+                    card.classList.remove('selected');
+                });
+                selectedTarif = null;
+                document.querySelector('.summary-row:nth-child(2) .summary-value').textContent = '-';
                 updateTotal();
             });
             
-            // Date and time selection
-            const dateInput = document.getElementById('date');
-            const timeSelect = document.getElementById('time');
-            
-            dateInput.addEventListener('change', function() {
-                const formattedDate = new Date(this.value).toLocaleDateString('fr-FR');
-                document.querySelector('.payment-summary .summary-row:nth-child(2) span:last-child').textContent = formattedDate;
-            });
-            
-            timeSelect.addEventListener('change', function() {
-                document.querySelector('.payment-summary .summary-row:nth-child(3) span:last-child').textContent = this.value;
-            });
-            
-            // Update total
-            function updateTotal() {
-                const selectedService = document.querySelector('.service-card.selected');
-                const participants = parseInt(document.querySelector('.counter-value').textContent);
-                
-                if (selectedService) {
-                    const priceText = selectedService.querySelector('.service-details p:last-child').textContent;
-                    const price = parseInt(priceText.match(/\d+/)[0]);
-                    const total = price * participants;
+            // Sélection des cartes de tarif
+            document.addEventListener('click', function(e) {
+                if (e.target.closest('.tarif-card')) {
+                    const card = e.target.closest('.tarif-card');
                     
-                    document.querySelector('.total-row span:last-child').textContent = total + '€';
+                    // Désélectionner toutes les cartes
+                    document.querySelectorAll('.tarif-card').forEach(c => {
+                        c.classList.remove('selected');
+                    });
+                    
+                    // Sélectionner la carte cliquée
+                    card.classList.add('selected');
+                    selectedTarif = card;
+                    
+                    // Mettre à jour le résumé
+                    document.querySelector('.summary-row:nth-child(2) .summary-value').textContent = 
+                        card.querySelector('h4').textContent;
+                    
+                    updateTotal();
                 }
-           
-            } 
-
+            });
             
+            // Gestion du compteur de participants
+            const decreaseBtn = document.querySelector('.decrease');
+            const increaseBtn = document.querySelector('.increase');
+            const counterValue = document.querySelector('.counter-value');
+            const participantsDisplay = document.querySelector('.summary-row:nth-child(5) .summary-value');
+            
+            decreaseBtn.addEventListener('click', function() {
+                let count = parseInt(counterValue.textContent);
+                if (count > 1) {
+                    count--;
+                    counterValue.textContent = count;
+                    participantsDisplay.textContent = count;
+                    updateTotal();
+                }
+            });
+            
+            increaseBtn.addEventListener('click', function() {
+                let count = parseInt(counterValue.textContent);
+                count++;
+                counterValue.textContent = count;
+                participantsDisplay.textContent = count;
+                updateTotal();
+            });
+            
+            // Gestion de la date
+            const dateInput = document.getElementById('date');
+            dateInput.addEventListener('change', function() {
+                document.querySelector('.summary-row:nth-child(3) .summary-value').textContent = this.value;
+            });
+            
+            // Gestion de l'heure
+            const timeSelect = document.getElementById('time');
+            timeSelect.addEventListener('change', function() {
+                document.querySelector('.summary-row:nth-child(4) .summary-value').textContent = this.value;
+            });
+            
+            // Fonction pour mettre à jour le total
+            function updateTotal() {
+                if (selectedTarif) {
+                    const participants = parseInt(counterValue.textContent);
+                    let total;
+                    
+                    // Vérifier si le prix est par personne
+                    const isPerPerson = selectedTarif.dataset.perPerson === "true";
+                    
+                    if (isPerPerson) {
+                        // Pour les cours en groupe, utiliser le prix total par personne multiplié par le nombre de participants
+                        total = parseFloat(selectedTarif.dataset.total) * participants;
+                    } else {
+                        // Pour les cours individuels ou autres services, utiliser le prix total comme base
+                        // (le prix ne change pas selon le nombre de participants)
+                        total = parseFloat(selectedTarif.dataset.total);
+                    }
+                    
+                    document.querySelector('.summary-row.total .summary-value').textContent = total + ' €';
+                } else {
+                    document.querySelector('.summary-row.total .summary-value').textContent = '-';
+                }
+            }
+        });
+    </script>
+</body>
+</html>

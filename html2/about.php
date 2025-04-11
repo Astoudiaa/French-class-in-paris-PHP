@@ -15,20 +15,21 @@
     <!-- Inclure le header -->
     <?php include 'header.php'; ?>
     
+    
     <main>
         <div class="text">
-            <h1>À propos de moi</h1>
+        
             <h2 class="text-propos">Enseignante de Français langue étrangère passionnée et engagée...</h2>
         </div>
         
         <div class="fade-in">
             <div class="bio">
                 <!-- <img src="/assets/img/Dalila-profil.jpeg" alt="Vue de Paris avec la Tour Eiffel" class="photo"> -->
-                <p>Je suis Dalila, enseignante de français langue étrangère (FLE), diplômée du DAEFLE (Diplôme d'Aptitude à l'Enseignement du Français Langue Étrangère) et forte de 8 ans d'expérience dans l'enseignement du français auprès d'apprenants de tous horizons et niveaux.</p>
-            </div>
+           <p>Je m'appelle Dalila, fondatrice de French Class in Paris et professeure diplômée du Diplôme d’Aptitude à l’Enseignement du Français Langue Etrangère (de Alliance Française de Paris). Depuis plus de 10 ans, j’accompagne des apprenants du monde entier dans l’apprentissage du français — pas à travers des manuels rigides, mais avec une approche humaine, sur-mesure et profondément vivante.</p>
+           </div>
 
             <div class="presentation">
-                <p>Après l'obtention de mon diplôme, j'ai souhaité créer mon entreprise afin de mettre ma vocation au service de l'apprentissage du français sous différentes formes et dans le respect des attentes et de la personnalité de chacun. Forte d'une carrière de 20 ans en tant que chargée de Fondations à l'Institut de France (Paris 6e), durant lequel j'ai acquis une solide expertise dans le domaine de la culture et de l'éducation, j'ai eu l'honneur d'être nommée Chevalière dans l'Ordre des Palmes Académiques, une distinction qui récompense mon engagement au service de l'Éducation Nationale pour la transmission et le partage de mes compétences.</p>
+                <p> Mon parcours m’a menée à enseigner à des profils très variés : expatriés, diplomates, professionnels en mobilité, candidats à des examens officiels, ou encore amoureux de la langue française. Ma pédagogie est née d’une conviction simple : le français ne s’enseigne pas, il se transmet, il se vit. Mon rôle n’est pas de faire réciter des règles, mais de vous aider à vous exprimer avec aisance, naturel et plaisir.Avec moi, pas de cours académiques standardisés, mais des sessions construites autour de vous, vos besoins, votre rythme, vos objectifs — qu’ils soient personnels, professionnels, ou académiques.</p>
             </div>
 
             <div class="photo-container">
@@ -36,31 +37,35 @@
             </div>
             
             <div class="parcours">
-                <p>Un engagement social fort : il y a quelques mois, j'ai ouvert une classe de FLE pour adultes migrants francophones et allophones à Mantes-la-Jolie (78), afin d'accompagner des femmes et des hommes dans leur processus d'intégration en France. Cette expérience enrichissante me permet de prendre pleinement conscience des défis rencontrés par ceux qui apprennent une nouvelle langue dans un contexte de migration, et m'a donné une vision plus humaine et personnalisée de l'enseignement.</p>
-            </div>
-   
-            <div class="parcours-bis">
-                <p>Mon approche pédagogique : tout en respectant le Cadre européen commun de référence pour les langues (CECRL), défini par la Commission Européenne, mon enseignement du FLE repose sur des principes de bienveillance, de flexibilité, d'interactivité et d'authenticité. Chaque cours est conçu pour répondre aux besoins individuels des élèves, que ce soit pour renforcer la compréhension et l'expression orale, améliorer la prononciation ou travailler l'expression écrite. Mon objectif est de rendre chaque leçon stimulante et agréable, loin des méthodes classiques, pour que vous appreniez le français dans une ambiance détendue et conviviale.</p>
-            </div>
-
+            <p> Mon objectif : vous faire passer du stade "d’apprenant" à celui de personne qui pense, parle et vit en français avec confiance.</p>
+   </div>
+           
             <div class="parcours-pro">
-                <p>Ce qui me distingue :
-                    <ul>
-                        <li>Des cours sur mesure pour adultes et adolescents à partir de 16 ans : que vous soyez débutant ou avancé, je conçois des leçons adaptées à vos objectifs personnels, en tenant compte de vos centres d'intérêt et de vos défis.</li>
-                        <li>Méthode interactive : discussions, jeux de rôle, mises en situation… Je vous propose des activités qui vous aident à vous exprimer de façon fluide, en vous immergeant dans des contextes réels de la vie quotidienne.</li>
-                        <li>Flexibilité totale : je propose des cours en ligne où que vous soyez dans le monde ou en présentiel à Paris, pour vous.</li>
-                    </ul>
-                </p>
+            <strong> Ce qui me distingue? </strong> <UL>
+            <li>Une pédagogie élégante, bienveillante, pragmatique et personnalisée</li> 
+            <li> Un apprentissage ancré dans le réel et la culture française</li> 
+            <li>Une solide expertise dans la préparation aux examens officiels (DELF, TCF, TEF)</li> 
+            <li> Et surtout…une grande dose d’écoute, de passion et d’intuition.</li>      </UL>
             </div>
 
             <div class="parcours-perso-bis">
-                <p>Plus personnellement, je suis auteure, j'ai écrit une autobiographie qui est en cours de réédition. Je suis une passionnée de voyages avec plusieurs road trip en solo à travers le monde. Je suis marathonienne et je pratique la boxe anglaise depuis 10 ans. Je me donne toujours entièrement aussi bien dans le domaine professionnel que personnel. J'aime relever les défis et je me challenge régulièrement.</p>
-            </div>
+            <p> Et au-delà de l’enseignement...
+            Je suis Chevalière des Palmes Académiques de l’éducation nationale récompensant 20 ans de carrière au sein de l’Institut de France. Je suis aussi auteure, boxeuse en anglaise depuis 10 ans, marathonienne et grande voyageuse. J’aime les défis, le mouvement, les mots bien choisis — et je crois profondément qu’on enseigne comme on est : avec passion, exigence, humour, et une touche de poésie. </p>
         </div>
+
+        <div class="parcourss">
+        <p>Bienvenue dans une autre manière d’apprendre. 
+Bienvenue à French Class in Paris. 🌿</p> 
+</div>
+
+ 
+
+
     </main>
 
-  <!-- Inclure le footer-->
-  <%- include('footer') %>
+    <!-- Inclure le footer -->
+    <?php include 'footer.php'; ?>
+
 
     <script>
         // Simple fade-in animation script
@@ -79,6 +84,87 @@
                 observer.observe(element);
             });
         });
+
+
+
+  /* Additional JS needed for mobile menu toggle */
+  
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navigation = document.querySelector('.navigation');
+    const body = document.body;
+    
+    // Create overlay element
+    const overlay = document.createElement('div');
+    overlay.className = 'overlay';
+    body.appendChild(overlay);
+    
+    menuToggle.addEventListener('click', function() {
+      menuToggle.classList.toggle('active');
+      navigation.classList.toggle('active');
+      overlay.classList.toggle('active');
+      body.classList.toggle('no-scroll');
+    });
+    
+    // Close menu when clicking on overlay
+    overlay.addEventListener('click', function() {
+      menuToggle.classList.remove('active');
+      navigation.classList.remove('active');
+      overlay.classList.remove('active');
+      body.classList.remove('no-scroll');
+    });
+    
+    // Close menu when clicking on navigation links
+    const navLinks = document.querySelectorAll('.navigation a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        menuToggle.classList.remove('active');
+        navigation.classList.remove('active');
+        overlay.classList.remove('active');
+        body.classList.remove('no-scroll');
+      });
+    });
+  });
+  
+  document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navigation = document.querySelector('.navigation');
+  const body = document.body;
+  
+  // Create overlay element
+  const overlay = document.createElement('div');
+  overlay.className = 'overlay';
+  body.appendChild(overlay);
+  
+  menuToggle.addEventListener('click', function() {
+    menuToggle.classList.toggle('active');
+    navigation.classList.toggle('active');
+    overlay.classList.toggle('active');
+    body.classList.toggle('no-scroll');
+  });
+  
+  // Close menu when clicking on overlay
+  overlay.addEventListener('click', function() {
+    menuToggle.classList.remove('active');
+    navigation.classList.remove('active');
+    overlay.classList.remove('active');
+    body.classList.remove('no-scroll');
+  });
+  
+  // Close menu when clicking on navigation links
+  const navLinks = document.querySelectorAll('.navigation a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      menuToggle.classList.remove('active');
+      navigation.classList.remove('active');
+      overlay.classList.remove('active');
+      body.classList.remove('no-scroll');
+    });
+  });
+});
     </script>
+
+
 </body>
 </html>

@@ -150,7 +150,7 @@ body {
   
   .name h1 {
     font-family: "Italianno", cursive;
-    font-size: 30px;
+    font-size: 40px;
     color: #b8860b;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     margin: 0;
@@ -298,21 +298,26 @@ nav {
 }
 
 .subtitle {
-    font-size: 18px;
-    color: var(--text-light);
-    max-width: 700px;
-    margin: 0 auto;
+    padding: 2rem;
+    font-size: 1.1rem;
+    font-family: 'Playfair Display', serif;
+    margin: -4rem auto 0;
+    padding: 2rem;
+    text-align: justify;
+    position: relative;
+    color: black;
+    font-family: 'Playfair Display', serif;
 }
 
 /* Section Info Cours */
-.cours-info {
-    padding: 80px 0;
+.cinfo {
+    padding: 100px 0;
 }
 
 .cours-content {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 80px;
 }
 
 .cours-text {
@@ -324,6 +329,8 @@ nav {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: var(--shadow);
+    width: 100%;  /* Ajuste la taille selon tes besoins */
+    max-width: 500px;  /* Limite la largeur maximale */
 }
 
 .cours-text h2 {
@@ -335,6 +342,85 @@ nav {
     margin-bottom: 24px;
     font-size: 17px;
 }
+
+.text  { 
+
+    font-size: 17px;
+    font
+}
+./* CSS pour l'affichage des images côte à côte */
+.cours-images-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  border-radius: 10px; 
+  align-items: stretch;
+}
+
+.cours-image-block {
+  width: 48%;
+  margin-bottom: 20px;
+}
+
+.cours-image-block img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; 
+  display: block;
+}
+
+.en-savoir-plus {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.en-savoir-plus a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+.en-savoir-plus a:hover {
+  color: #007bff;
+}
+
+/* Responsive pour les écrans plus petits */
+@media (max-width: 768px) {
+  .cours-image-block {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .stats {
     display: flex;
@@ -598,7 +684,7 @@ nav {
 
 /* Contact section */
 .contact {
-    background-color: var(--background-light);
+    background-color: var(--primary-color: #C9AA5B)
     padding: 80px 0;
     text-align: center;
 }
