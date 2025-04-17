@@ -23,9 +23,12 @@
             <div class="content">
                 <h1>Cours de Francais autour d'un Petit Déjeuner</h1>
                 <p class="description">
-                   Rejoignez-moi pour une expérience unique où, au lieu d’une simple leçon, vous vous immergez dans la langue et la culture françaises autour de croissant frais, de café parfumé, et d'autres délices typiques.
-                   Que vous soyez débutant ou déjà initié, mon approche interactive vous permettra de pratiquer le français de manière naturelle et décontractée. Nous aborderons des sujets de conversation variés, adaptés à votre niveau, le tout dans l'atmosphère charmante du quartier historique de Montmartre.
-                    
+                Bienvenue dans le cœur vibrant de Paris, à
+quelques pas de la charmante Butte Montmartre où l’art et la gastronomie se rencontrent.
+Savourez la légèreté d’un croissant doré, le parfum enivrant d’un café et l’authenticité des
+traditions culinaires françaises. Ensemble, nous plongerons dans l’univers de la langue française
+autour de ce repas typique qui enrichira votre expérience parisienne. Préparez-vous à vivre un
+moment convivial où chaque bouchée vous rapprochera un peu plus de la culture française.
                 </p>
             
                 <a href="#" class="cta-button"onclick="window.location.href='./reservation.html'">Réserver un petit déjeuner</a></button>
@@ -51,17 +54,14 @@
             
         <div class="info-box">
             <p class="info-title">Durée de l'expérience : 2 heures</p>
-            <p class="info-price">Coût de l'expérience : 115 euros</p>
+            <p class="info-price">Coût de l'expérience : 120 €</p>
             <p class="info-details">Compris dans le tarif : la boisson chaude au choix (chocolat chaud, café, latte, thé...) et une pâtisserie au choix à la carte.</p>
-        </div>
-
-        <div class="promo-box">
             <p>En solo ou en petit groupe de 4 personnes maximum. Remise de 10 % à partir de 3 personnes.</p>
-        </div>
-
-    
+     
     </main>
-<script src="/public/js/petit-dej.js"></script>
+
+<script src="../public/js/petit-dej.js"></script>
+<script src="../public/js/navbar.js"></script>
 
 </body>
 </html>

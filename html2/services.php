@@ -15,82 +15,23 @@
 
 <?php include 'header.php'; ?>
 
+<!-- Inclure le footer -->
+<?php include 'footer.php';?>
 
-
-    <section class="realisations">
-        <div class="container">
-        <div class="subtitle-container">
-    
-         
-         <p class="subtitle"><strong>Apprendre le français</strong>  est bien plus qu’un simple exercice linguistique : c’est une porte ouverte sur une culture, une élégance et une aisance qui vous permettront d’évoluer avec confiance dans un environnement francophone.</p> 
-         <p class="subtitle"><strong>Mon engagement</strong>  est de vous offrir un enseignement de qualité, allié à une grande flexibilité. Que ce soit en ligne ou en présentiel, nous adaptons ensemble le format et les horaires pour répondre à vos exigences.</p>
-         <p class="subtitle"><strong> Maîtriser le français</strong>  avec aisance et distinction, c’est possible. Ensemble, faisons de votre apprentissage une réussite aussi fluide qu’enrichissante. N’hésitez pas à me contacter afin de définir ensemble le programme qui vous correspond.
-
-</p>
-        </div>
-        <section class="cinfo">
-  <div class="container">
-    <div class="cours-contents">
-      <div class="cours-images-container" style="display: flex; justify-content: space-between; align-items: stretch;">
-        <!-- First image with text -->
-        <div class="cours-image-block" style="width: 48%; display: flex; flex-direction: column;">
-          <div class="image-container" style="flex-grow: 1; position: relative; min-height: 400px;">
-            <img src="/public/img/cours-individuel.jpeg" alt="Cours de français" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; max-height: 100%; object-fit: contain;">
-          </div>
-          <div class="en-savoir-plus" style="text-align: center; margin-top: 10px; border-radius:10px">
-            <p class ="text">Cours en presentiel</p>
-            <a href="#" class="btn-gold" style="text-decoration: none; color: #333; font-weight: bold;">En savoir plus</a>
-          </div>
-        </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('menu-toggle');
+        const navigation = document.getElementById('navigation');
         
-        <!-- Second image with text -->
-        <div class="cours-image-block" style="width: 48%; display: flex; flex-direction: column;">
-          <div class="image-container" style="flex-grow: 1; position: relative; min-height: 400px;">
-            <img src="/public/img/ligne-dalila.jpeg" alt="Cours de français" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; max-height: 100%; object-fit: contain;">
-          </div>
-          <div class="en-savoir-plus" style="text-align: center; margin-top: 10px;">
-          <p class ="text">Cours en ligne</p>
-            <a href="#" class="btn-gold" style="text-decoration: none; color: #333; font-weight: bold;">En savoir plus</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+        if (menuToggle && navigation) {
+            menuToggle.addEventListener('click', function() {
+                console.log("Menu toggle clicked");
+                navigation.classList.toggle('show');
+            });
+        }
+    });
+</script>
 
-
-
-    <section id="pourquoi" class="pourquoi">
-        <div class="container">
-            <h2>Pourquoi choisir nos cours particuliers ?</h2>
-        
-            <div class="avantages">
-                <div class="avantage-item">
-                    <i class="fas fa-user-graduate"></i>
-                    <h3>Personnalisation</h3>
-                    <p>Programme adapté à vos objectifs spécifiques et à votre rythme d'apprentissage</p>
-                </div>
-            
-                <div class="avantage-item">
-                    <i class="fas fa-comment-dots"></i>
-                    <h3>Pratique intensive</h3>
-                    <p>Temps de parole maximisé pour une progression rapide de vos compétences orales</p>
-                </div>
-            
-                <div class="avantage-item">
-                    <i class="fas fa-clock"></i>
-                    <h3>Flexibilité</h3>
-                    <p>Horaires adaptés à vos disponibilités, en présentiel ou à distance</p>
-                </div>
-            </div>
-        </div>
-
-        <a href="/html2/reservation.php" class="btn-gold">Réserver</a>
-    </section>
-     
-    <script src="/public/js/cours.js"></script>
-    <!-- Inclure le footer -->
-    <?php include 'footer.php'; ?>
 
 </body>
 </html>

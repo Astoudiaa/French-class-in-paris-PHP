@@ -166,26 +166,35 @@ body {
   }
   .container {
     display: flex;
-    align-items: center; /* Aligne le texte et l'image verticalement */
-    gap: 30px; /* Espacement entre le texte et l’image */
+    align-items: center;
+    gap: 30px;
     max-width: 1000px;
     margin: 50px auto;
     padding: 20px;
+    border: none; /* <- on s'assure qu'il n'y ait pas de bordure */
+    box-shadow: none; /* <- on enlève toute ombre s’il y en avait */
 }
+
 .content {
     flex: 1;
-    background: #faf3e0; /* Couleur douce et élégante */
-    padding: 20px;
-    border-radius: 10px;
+    /* background: #faf3e0; */ /* <-- supprimé */
+    padding: 0; /* <-- retiré pour coller au reste de la page */
     font-family: 'Merriweather', serif;
+    color: #1a1a1a;
     text-align: justify;
+    border: none;
+    box-shadow: none;   font-weight: normal; /* <-- enleve le gras pour le texte */
 }
+
+
+
 
 
 .content h1 {
     font-size: 26px;
-    color: #8b5e3c; /* Couleur chaleureuse */
+    color: black;
     margin-bottom: 15px;
+    font-weight: normal; /* <-- enleve le gras pour le titre */
 }
 
 .description {
@@ -334,7 +343,7 @@ h1 {
     font-size: 20px;
     margin-bottom: 15px;
     text-align: center;
-    color: #5a4a2f;
+    color:black;
     letter-spacing: 0.5px;
     position: relative;
     padding-bottom: 10px;

@@ -90,4 +90,6 @@
                     <a href="./reservation" class="btn-gold">Réserver</a>
                 </div>
                 </div>
-          
+                <script src="../public/js/navbar.js"></script>
+    </body>
+    </html>

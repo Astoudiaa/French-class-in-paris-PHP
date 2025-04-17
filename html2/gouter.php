@@ -32,12 +32,29 @@
                     <img src="/public/img/cours-gouter.jpeg" alt="Petit déjeuner parisien 1" class="slide">
                     <img src="/public/img/Gouter.jpeg" alt="Petit déjeuner parisien 2" class="slide">
                     <img src="/public/img/dalila-brunch.jpeg" alt="Petit déjeuner parisien 3" class="slide">
-                    <img src="/public/img/" alt="Petit déjeuner parisien 4" class="slide">
-                    <img src="/public/img/petit-dejeuner.jpeg" alt="Petit déjeuner parisien 5" class="slide">
-                    <img src="/public/img/veranda-exterieur.jpeg" alt="Petit déjeuner parisien 6" class="slide">
-                    <img src="/public/img/cours-petit-dejeuner.jpeg" alt="Petit déjeuner parisien 1" class="slide">
-                    <img src="/public/img/petit-dejeuner.jpeg" alt="Petit déjeuner parisien 2" class="slide">
-                    <img src="/public/img/veranda-exterieur.jpeg" alt="Petit déjeuner parisien 3" class="slide">
+                    <img src="/public/img/Gouter.jpeg" alt="Petit déjeuner parisien 4" class="slide">
+                    <img src="/public/img/cours-gouter.jpeg" alt="Petit déjeuner parisien 1" class="slide">
+                    <img src="/public/img/cathedrale.jpeg" alt="Petit déjeuner parisien 6" class="slide">
+                    <img src="/public/img/Salle-classe.jpeg" alt="Petit déjeuner parisien 5" class="slide">
+                    <img src="/public/img/Gouter.jpeg" alt="Petit déjeuner parisien 6" class="slide">
+                    <img src="/public/img/cours-gouter.jpeg" alt="Petit déjeuner parisien 1" class="slide">
+                    <img src="/public/img/cathedrale.jpeg" alt="Petit déjeuner parisien 6" class="slide">
+                    <img src="/public/img/cours-gouter.jpeg" alt="Petit déjeuner parisien 1" class="slide">
+                    <img src="/public/img/cours-gouter.jpeg" alt="Petit déjeuner parisien 1" class="slide">
+                    <img src="/public/img/Gouter.jpeg" alt="Petit déjeuner parisien 2" class="slide">
+                    <img src="/public/img/dalila-brunch.jpeg" alt="Petit déjeuner parisien 3" class="slide">
+                    <img src="/public/img/Gouter.jpeg" alt="Petit déjeuner parisien 4" class="slide">
+                    <img src="/public/img/Salle-classe.jpeg" alt="Petit déjeuner parisien 5" class="slide">
+                    <img src="/public/img/Gouter.jpeg" alt="Petit déjeuner parisien 6" class="slide">
+                    <img src="/public/img/cathedrale.jpeg" alt="Petit déjeuner parisien 6" class="slide">
+                    <img src="/public/img/cours-gouter.jpeg" alt="Petit déjeuner parisien 1" class="slide">
+                    <img src="/public/img/Gouter.jpeg" alt="Petit déjeuner parisien 2" class="slide">
+                    <img src="/public/img/dalila-brunch.jpeg" alt="Petit déjeuner parisien 3" class="slide">
+                    <img src="/public/img/Gouter.jpeg" alt="Petit déjeuner parisien 4" class="slide">
+                    <img src="/public/img/Salle-classe.jpeg" alt="Petit déjeuner parisien 5" class="slide">
+                    <img src="/public/img/cathedrale.jpeg" alt="Petit déjeuner parisien 6" class="slide">
+                    <img src="/public/img/cours-gouter.jpeg" alt="Petit déjeuner parisien 1" class="slide">
+                    
                 </div>
             </div>
         </div>
@@ -48,7 +65,7 @@
             
         <div class="info-box">
             <p class="info-title">Durée de l'expérience : 2 heures</p>
-            <p class="info-price">Coût de l'expérience : 110 euros</p>
+            <p class="info-price">Coût de l'expérience :120 €</p>
             <p class="info-details"> la boisson chaude au choix (chocolat chaud, café, latte, thé…) et une pâtisserie au choix à la carte.</p>
             <p>En solo ou en petit groupe de 4 personnes maximum. Remise de 10 % à partir de 3 personnes.</p>
         </div>

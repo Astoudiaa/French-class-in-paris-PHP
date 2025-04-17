@@ -844,3 +844,10 @@ nav {
         max-width: 100%;
     }
 }
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(212, 175, 55, 0.1);
+    margin-top: 50px;
+  }
+  

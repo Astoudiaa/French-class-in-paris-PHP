@@ -243,10 +243,6 @@ main {
 }
 
 
-
-
-
-
 .text-container { 
   font-family: "Italianno", cursive;
   font-style: normal;
@@ -406,5 +402,26 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-links a:hover {
     text-decoration: underline;
+}
+
+
+
+
+
+.footer-experiences  {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(212, 175, 55, 0.1);
+  margin-top: 50px;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 

@@ -99,7 +99,8 @@
         <a href="/html2/reservation.php" class="btn-gold">Réserver</a>
     </section>
      
-    <script src="/public/js/cours.js"></script>
+    <script src="../public/js/cours.js"></script>
+    <script src="../public/js/navbar.js"></script>
     <!-- Inclure le footer -->
     <?php include 'footer.php'; ?>
 </body>

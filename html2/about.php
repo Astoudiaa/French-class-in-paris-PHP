@@ -57,16 +57,9 @@
         <p>Bienvenue dans une autre manière d’apprendre. 
 Bienvenue à French Class in Paris. 🌿</p> 
 </div>
-
- 
-
-
     </main>
-
     <!-- Inclure le footer -->
     <?php include 'footer.php'; ?>
-
-
     <script>
         // Simple fade-in animation script
         document.addEventListener('DOMContentLoaded', function() {
@@ -84,87 +77,8 @@ Bienvenue à French Class in Paris. 🌿</p>
                 observer.observe(element);
             });
         });
-
-
-
-  /* Additional JS needed for mobile menu toggle */
-  
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navigation = document.querySelector('.navigation');
-    const body = document.body;
-    
-    // Create overlay element
-    const overlay = document.createElement('div');
-    overlay.className = 'overlay';
-    body.appendChild(overlay);
-    
-    menuToggle.addEventListener('click', function() {
-      menuToggle.classList.toggle('active');
-      navigation.classList.toggle('active');
-      overlay.classList.toggle('active');
-      body.classList.toggle('no-scroll');
-    });
-    
-    // Close menu when clicking on overlay
-    overlay.addEventListener('click', function() {
-      menuToggle.classList.remove('active');
-      navigation.classList.remove('active');
-      overlay.classList.remove('active');
-      body.classList.remove('no-scroll');
-    });
-    
-    // Close menu when clicking on navigation links
-    const navLinks = document.querySelectorAll('.navigation a');
-    navLinks.forEach(link => {
-      link.addEventListener('click', function() {
-        menuToggle.classList.remove('active');
-        navigation.classList.remove('active');
-        overlay.classList.remove('active');
-        body.classList.remove('no-scroll');
-      });
-    });
-  });
-  
-  document.addEventListener('DOMContentLoaded', function() {
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navigation = document.querySelector('.navigation');
-  const body = document.body;
-  
-  // Create overlay element
-  const overlay = document.createElement('div');
-  overlay.className = 'overlay';
-  body.appendChild(overlay);
-  
-  menuToggle.addEventListener('click', function() {
-    menuToggle.classList.toggle('active');
-    navigation.classList.toggle('active');
-    overlay.classList.toggle('active');
-    body.classList.toggle('no-scroll');
-  });
-  
-  // Close menu when clicking on overlay
-  overlay.addEventListener('click', function() {
-    menuToggle.classList.remove('active');
-    navigation.classList.remove('active');
-    overlay.classList.remove('active');
-    body.classList.remove('no-scroll');
-  });
-  
-  // Close menu when clicking on navigation links
-  const navLinks = document.querySelectorAll('.navigation a');
-  navLinks.forEach(link => {
-    link.addEventListener('click', function() {
-      menuToggle.classList.remove('active');
-      navigation.classList.remove('active');
-      overlay.classList.remove('active');
-      body.classList.remove('no-scroll');
-    });
-  });
-});
     </script>
-
+<script src="../public/js/navbar.js"></script>
 
 </body>
 </html>

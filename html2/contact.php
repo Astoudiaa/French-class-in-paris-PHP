@@ -20,7 +20,7 @@
         <div class="content-wrapper">
             <div class="contact-form">
                 <h2>Envoyez-nous un message</h2>
-                <form method="POST" action="/html2/contact.php">
+                <form method="POST" action="/html2/send-mail.php">
                     <div class="form-group">
                         <input type="text" id="fullname" name="fullname" placeholder="Nom complet" required>
                     </div>
@@ -55,7 +55,7 @@
                 <div class="info-item">
                     <span class="icon">✉️</span>
                     <span>Email</span>
-                    <p>daillarap@yahoo.fr</p>
+                    <p></p>
                 </div>
                 <div class="info-item">
                     <span class="icon">🕒</span>
@@ -69,6 +69,6 @@
     <!-- Inclure le footer -->
     <?php include 'footer.php'; ?>
 
-
+    <script src="../public/js/navbar.js"></script>
 </body>
 </html>

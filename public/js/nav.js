@@ -1,32 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.getElementById('menuToggle');
-    const navigation = document.getElementById('navigation');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navigation = document.querySelector('.navigation');
     
-    if (!menuToggle || !navigation) {
-      console.error("Menu toggle or navigation elements not found!");
-      return;
-    }
-    
-    menuToggle.addEventListener('click', function(e) {
-      e.stopPropagation();
-      menuToggle.classList.toggle('active');
-      navigation.classList.toggle('active');
-      console.log("Menu toggle clicked");
-    });
-    
-    // Fermer le menu en cliquant en dehors
-    document.addEventListener('click', function(e) {
-      if (navigation.classList.contains('active') && 
-          !navigation.contains(e.target) && 
-          !menuToggle.contains(e.target)) {
+    if (menuToggle && navigation) {
+      menuToggle.addEventListener('click', function() {
+        navigation.classList.toggle('active');
         
-        menuToggle.classList.remove('active');
-        navigation.classList.remove('active');
-      }
-    });
-    
-    // Empêcher la propagation du clic depuis la navigation
-    navigation.addEventListener('click', function(e) {
-      e.stopPropagation();
-    });
+        // Animation du menu hamburger (optionnel)
+        const spans = menuToggle.querySelectorAll('span');
+        if (navigation.classList.contains('active')) {
+          spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+          spans[1].style.opacity = '0';
+          spans[2].style.transform = 'rotate(-45deg) translate(7px, -8px)';
+        } else {
+          spans[0].style.transform = 'none';
+          spans[1].style.opacity = '1';
+          spans[2].style.transform = 'none';
+        }
+      });
+    }
   });

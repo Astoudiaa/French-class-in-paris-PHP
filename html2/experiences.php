@@ -21,9 +21,6 @@
          <p class="subtitle">Un moment convivial et enrichissant qui allie apprentissage, culture et gastronomie française. </p>
          <!--  <p class="subtitle">Apprendre le français est bien plus qu’un simple exercice linguistique : c’est une porte ouverte sur une culture, une élégance et une aisance qui vous permettront d’évoluer avec confiance dans un environnement francophone.</p>-->
         </div>
-
-
-
       
   <p class="description-cours">
   "Vivez une expérience unique où, au lieu d’une simple leçon, vous vous immergez dans la langue et la culture françaises autour de croissant frais, de café parfumé, et d'autres délices typiques.
@@ -31,7 +28,6 @@
 
   </p>
 <div>  
-
 
  <div>
         <footer class="footer">
@@ -47,16 +43,16 @@
             <div class="card">
                 <img src="/public/img/Gouter.jpeg" alt="Goûter culturel">
                 <h3>Goûter culturel</h3>
-                <p>Vivez un moment convivial et enrichissant qui allie apprentissage, culture et gastronomie française.</p>
+                <p>Vivez un moment convivial et enrichissant qui
+                allie apprentissage, culture et gastronomie française à quelques pas du Louvre</p>
                 <a href="/html2/gouter.php">En savoir plus → </a>
             </div>
            
     </div>
    <!-- Inclure le footer -->
-   <?php include ('footer-experiences.php'); ?>
+   <script src="../public/js/navbar.js"></script>
 
+<p class="footer-experiences"> &copy; 2025 French Class In Paris Dalila Raposo - Tous droits réservés</p>
 
 </body>
-
-
 </html>

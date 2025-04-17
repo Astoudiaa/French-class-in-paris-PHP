@@ -185,10 +185,8 @@
             </div>
         </section>
     </main>
-
-
     <!-- Inclure le footer -->
     <?php include 'footer.php'; ?>
-
+    <script src="../public/js/navbar.js"></script>
 </body>
 </html>
