@@ -22,40 +22,36 @@
             <h2 class="text-propos">Enseignante de Français langue étrangère passionnée et engagée...</h2>
         </div>
         
-        <div class="fade-in">
+        <div class="fade-in"> 
             <div class="bio">
-                <!-- <img src="/assets/img/Dalila-profil.jpeg" alt="Vue de Paris avec la Tour Eiffel" class="photo"> -->
-           <p>Je m'appelle Dalila, fondatrice de French Class in Paris et professeure diplômée du Diplôme d’Aptitude à l’Enseignement du Français Langue Etrangère (de Alliance Française de Paris). Depuis plus de 10 ans, j’accompagne des apprenants du monde entier dans l’apprentissage du français — pas à travers des manuels rigides, mais avec une approche humaine, sur-mesure et profondément vivante.</p>
+           <p>Je m'appelle <strong>Dalila</strong> , fondatrice de <i>French Class in Paris</i> et professeure diplômée du <strong>Diplôme d’Aptitude à l’Enseignement du Français Langue Etrangère </strong> (de Alliance Française de Paris). Depuis plus de 10 ans, j’accompagne des apprenants du monde entier dans l’apprentissage du français — pas à travers des manuels rigides, mais avec une approche <strong>humaine, sur-mesure et profondément vivante </strong>.</p>
            </div>
 
             <div class="presentation">
-                <p> Mon parcours m’a menée à enseigner à des profils très variés : expatriés, diplomates, professionnels en mobilité, candidats à des examens officiels, ou encore amoureux de la langue française. Ma pédagogie est née d’une conviction simple : le français ne s’enseigne pas, il se transmet, il se vit. Mon rôle n’est pas de faire réciter des règles, mais de vous aider à vous exprimer avec aisance, naturel et plaisir.Avec moi, pas de cours académiques standardisés, mais des sessions construites autour de vous, vos besoins, votre rythme, vos objectifs — qu’ils soient personnels, professionnels, ou académiques.</p>
+                <p> Mon parcours m’a menée à enseigner à des profils très variés : <strong>expatriés, diplomates, professionnels en mobilité, candidats à des examens officiels</strong>, ou encore amoureux de la langue française. Ma pédagogie est née d’une conviction simple : <strong>le français ne s’enseigne pas, il se transmet, il se vit</strong>. Mon rôle n’est pas de faire réciter des règles, mais de vous aider à vous <strong>exprimer avec aisance, naturel et plaisir</strong>. Avec moi, <strong>pas de cours académiques standardisés</strong>, mais des sessions construites autour de vous, vos besoins, votre rythme, vos objectifs — qu’ils soient personnels, professionnels, ou académiques.</p>
             </div>
 
-            <div class="photo-container">
-             <!--     <img src="/assets/img/salleclasse.jpeg" alt="salle classe" class="photo-classe"> --> 
-            </div>
-            
+    
             <div class="parcours">
-            <p> Mon objectif : vous faire passer du stade "d’apprenant" à celui de personne qui pense, parle et vit en français avec confiance.</p>
+            <p> <strong>Mon objectif</strong> : vous faire passer du stade "d’apprenant" à celui de <strong>personne qui pense, parle et vit en français avec confiance</strong>.</p>
    </div>
            
             <div class="parcours-pro">
-            <strong> Ce qui me distingue? </strong> <UL>
-            <li>Une pédagogie élégante, bienveillante, pragmatique et personnalisée</li> 
-            <li> Un apprentissage ancré dans le réel et la culture française</li> 
-            <li>Une solide expertise dans la préparation aux examens officiels (DELF, TCF, TEF)</li> 
+         Ce qui me distingue?  <UL>
+            <li>Une pédagogie élégante, <strong>ienveillante, pragmatique et personnalisée </strong></li> 
+            <li> Un apprentissage ancré dans <strong>le réel et la culture française </strong></li> 
+            <li>Une solide expertise dans la <strong>préparation aux examens officiels (DELF, TCF, TEF) </strong></li> 
             <li> Et surtout…une grande dose d’écoute, de passion et d’intuition.</li>      </UL>
             </div>
 
             <div class="parcours-perso-bis">
             <p> Et au-delà de l’enseignement...
-            Je suis Chevalière des Palmes Académiques de l’éducation nationale récompensant 20 ans de carrière au sein de l’Institut de France. Je suis aussi auteure, boxeuse en anglaise depuis 10 ans, marathonienne et grande voyageuse. J’aime les défis, le mouvement, les mots bien choisis — et je crois profondément qu’on enseigne comme on est : avec passion, exigence, humour, et une touche de poésie. </p>
+            Je suis <strong>Chevalière des Palmes Académiques</strong> de l’éducation nationale récompensant 20 ans de carrière au sein de l’Institut de France. Je suis aussi <strong>auteure, boxeuse en anglaise depuis 10 ans, marathonienne et grande voyageuse</strong>. J’aime les défis, le mouvement, les mots bien choisis — et je crois profondément qu’on enseigne comme on est : avec passion, exigence, humour, et une touche de poésie. </p>
         </div>
 
         <div class="parcourss">
-        <p>Bienvenue dans une autre manière d’apprendre. 
-Bienvenue à French Class in Paris. 🌿</p> 
+        <p>Bienvenue dans une autre manière d’apprendre. </p> 
+        <p> <i><strong>Bienvenue à French Class in Paris. 🌿</strong></i></p> 
 </div>
     </main>
     <!-- Inclure le footer -->

@@ -21,7 +21,7 @@
     <main>
         <div class="container">
             <div class="content">
-                <h1>Cours de Francais autour d'un Petit Déjeuner</h1>
+                <h1>Cours de francais autour d'un petit-déjeuner</h1>
                 <p class="description">
                 Bienvenue dans le cœur vibrant de Paris, à
 quelques pas de la charmante Butte Montmartre où l’art et la gastronomie se rencontrent.
@@ -38,12 +38,19 @@ moment convivial où chaque bouchée vous rapprochera un peu plus de la culture 
                     <img src="/public/img/cours-petit-dejeuner.jpeg" alt="Petit déjeuner parisien 1" class="slide">
                     <img src="/public/img/petit-dejeuner.jpeg" alt="Petit déjeuner parisien 2" class="slide">
                     <img src="/public/img/veranda-exterieur.jpeg" alt="Petit déjeuner parisien 3" class="slide">
+                    <img src="/public/img/dalila-brunch.jpeg" alt="Petit déjeuner parisien 2" class="slide">
                     <img src="/public/img/cours-petit-dejeuner.jpeg" alt="Petit déjeuner parisien 4" class="slide">
                     <img src="/public/img/petit-dejeuner.jpeg" alt="Petit déjeuner parisien 5" class="slide">
+                    <img src="/public/img/dalila-brunch.jpeg" alt="Petit déjeuner parisien 2" class="slide">
+                    <img src="/public/img/cours-petit-dejeuner.jpeg" alt="Petit déjeuner parisien 2" class="slide">
                     <img src="/public/img/veranda-exterieur.jpeg" alt="Petit déjeuner parisien 6" class="slide">
                     <img src="/public/img/cours-petit-dejeuner.jpeg" alt="Petit déjeuner parisien 1" class="slide">
+                    <img src="/public/img/petit-dejeuner.jpeg" alt="Petit déjeuner parisien 5" class="slide">
+                    <img src="/public/img/dalila-brunch.jpeg" alt="Petit déjeuner parisien 2" class="slide">
                     <img src="/public/img/petit-dejeuner.jpeg" alt="Petit déjeuner parisien 2" class="slide">
                     <img src="/public/img/veranda-exterieur.jpeg" alt="Petit déjeuner parisien 3" class="slide">
+                    <img src="/public/img/dalila-brunch.jpeg" alt="Petit déjeuner parisien 2" class="slide">
+
                 </div>
             </div>
         </div>

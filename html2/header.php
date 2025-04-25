@@ -42,7 +42,7 @@
       <a href="/html2/modeles.php">Cours personnalisés</a>
       <a href="/html2/experiences.php">Expériences culturelles</a>
       <a href="/html2/realisations.php">Réalisations</a>
-      <a href="/html2/send-mail.php">Contact</a>
+      <a href="/html2/contact.php">Contact</a>
       <!-- Bouton Réserver à droite -->
       <button class="reserve-button" onclick="window.location.href='/reservation'">Réserver</button>
     </nav>

@@ -55,12 +55,12 @@
                 <div class="info-item">
                     <span class="icon">✉️</span>
                     <span>Email</span>
-                    <p></p>
+                    <p>contact@frenchclassinparis.com</p>
                 </div>
                 <div class="info-item">
                     <span class="icon">🕒</span>
                     <span>Horaires</span>
-                    <p>Du lundi au samedi<br>9h00 - 18h00</p>
+                    <p>Du lundi au samedi<br>9h00 - 20h00</p>
                 </div>
             </div>
         </div>

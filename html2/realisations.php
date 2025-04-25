@@ -50,7 +50,7 @@
                 </div>
                 
                 <div class="cours-image">
-                    <img src="/public/img/classe.jpg" alt="Cours de français">
+                    <img src="/public/img/ChatGPT Image 17 avr. 2025, 15_04_52.png" alt="Cours de français">
                 </div>
             </div>
         </div>
@@ -147,7 +147,7 @@
                     <div class="testimonial-profile">
 
                         <div class="testimonial-info">
-                            <h3>Robert-Charles Chemoul </h3>
+                            <h3><strong>Robert-Charles Chemoul</strong> </h3>
                             <p>Directeur Fondateur de l’Association Atouts cour</p>
                         </div>
                     </div>
@@ -160,16 +160,26 @@
                     <div class="testimonial-profile">
 
                         <div class="testimonial-info">
-                            <h3>Mursel,</h3>
-                            <p>Expatrié</p>
+                            <h3>Mursel,Turc</h3>
+                            <p><strong>Expatrié</strong></p>
                         </div>
                     </div>
                     <blockquote>
                     “Dalila est très pédagogue et patiente. J’ai bien progressé mon français avec elle principalement pour être plus à l’aise dans le cadre de mon travail”.
-                    
                     </blockquote>
                 </div>
                 
+                <div class="testimonial-card">
+                    <div class="testimonial-profile">
+                        <div class="testimonial-info">
+                            <h3> <strong>Tiziania, Italienne</strong></h3>
+                            <p> <strong>Expatriée</strong></p>
+                        </div>
+                    </div>
+                    <blockquote>
+                   “Je tiens à vous dire que le travail que nous avons fait ensemble ces derniers mois m’a été très utile aussi bien dans ma vie professionnelle que personnelle. Votre patience, pédagogie et gentillesse ont été des atouts d’accompagnement”.
+                    </blockquote>
+                </div>
                 <div class="testimonial-card">
                     <div class="testimonial-profile">
                         <div class="testimonial-info">

@@ -6,9 +6,7 @@ body {
   background: linear-gradient(145deg, #f5eee5 0%, #e6d5c3 100%);
   color: #54483e;
   line-height: 1.6;
-  
 }
-
 
 /* Navigation styles with transparent background */
 header {
@@ -31,6 +29,7 @@ header {
   transform: translateY(-10px); /* Remonte sans décaler la mise en page */
   margin-left: -40px; /* Décale vers la gauche */
 }
+
 .logo img {
   width: 170px;
   height: auto;
@@ -72,7 +71,6 @@ header {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-
 .navigation a::before {
   content: '';
   position: absolute;
@@ -80,7 +78,6 @@ header {
   left: 0;
   width: 0;
   height: 2px;
-
   transition: width 0.4s ease;
 }
 
@@ -102,8 +99,6 @@ header {
   background: linear-gradient(to right, transparent, #d4af37, transparent);
 }
 
-/* Styles pour les petits écrans */
-/* Styles pour les petits écrans */
 @media (max-width: 768px) {
   .navigation {
       display: none;
@@ -124,12 +119,13 @@ header {
   .menu-toggle {
       display: block;
       margin: 15px;
-  }
-}
-.scrolled {
-  background-color: rgba(0, 0, 0, 0.8); /* Exemple de changement de couleur quand on scroll */
-  transition: background-color 0.3s ease;
-}
+  }}
+
+  .scrolled {
+      background-color: rgba(0, 0, 0, 0.8); /* Exemple de changement de couleur quand on scroll */
+      transition: background-color 0.3s ease;
+    }
+
 
 /* Menu toggle for mobile */
 .menu-toggle {
@@ -176,7 +172,6 @@ header {
   filter: brightness(0.7);
   z-index: -1;
 }
-  
 
 .hero-content {
   padding: 2rem;
@@ -188,7 +183,7 @@ header {
 .hero-title {
   font-family: 'Cinzel', serif;
   font-size: 3rem;
-  color:  #c39e0d;
+  color: #c39e0d;
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
@@ -198,7 +193,7 @@ header {
   font-size: 1.5rem;
   margin-bottom: 2rem;
   margin-top: -20px;
-  color:#c39e0d;
+  color: #c39e0d;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
@@ -268,7 +263,6 @@ main {
   font-style: normal;
   font-size: 45px;
   line-height: 1.2;
-
 }
 
 .author {
@@ -278,6 +272,7 @@ main {
   margin-right: 400px;
 }
 
+/* Gallery styles - conserve la disposition originale */
 .gallery {
   display: flex;
   justify-content: center;
@@ -359,39 +354,121 @@ footer {
   margin-top: 50px;
 }
 
-/* Media Que.ries for Responsive Design */
+/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
   .hero-section {
-      height: 80vh;
+    height: 80vh;
   }
 
   .hero-title {
-      font-size: 2.5rem;
+    font-size: 2.5rem;
   }
 
   .hero-subtitle {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 
   .hero-button {
-      padding: 10px 25px;
-      font-size: 1rem;
+    padding: 10px 25px;
+    font-size: 1rem;
   }
 
   .navigation {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      text-align: center;
-      position: fixed;
-      top: 0;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.8);
-      padding: 60px 0 20px;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 60px 0 20px;
   }
 
   .navigation.responsive {
-      display: flex;
+    display: flex;
+  }
+
+
+  /* Menu language selector responsive */
+  .language-selector {
+    margin: 10px 0;
+  }
+  
+  .language-dropdown {
+    position: static;
+    width: 100%;
+  }
+
+  /* Gallery responsive design pour mobile */
+  .gallery {
+      flex-direction: column;
+      margin-top: 20px;
+  }
+  
+  .gallery-item {
+    width: 90%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  
+  .gallery-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  
+  .gallery-title {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .author {
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+/* Pour les tablettes */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .gallery {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .gallery-item {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+  
+  .gallery-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  
+  .author {
+    margin-right: 200px;
+  }
+}
+
+/* Styles pour les petits écrans */
+@media (max-width: 768px) {
+
+
+  .navigation {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 60px 0 20px;
+  }
+  .navigation.responsive {
+    display: flex;
   }
 
   .menu-toggle {
