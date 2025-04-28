@@ -31,7 +31,7 @@ autour de ce repas typique qui enrichira votre expérience parisienne. Préparez
 moment convivial où chaque bouchée vous rapprochera un peu plus de la culture française.
                 </p>
             
-                <a href="#" class="cta-button"onclick="window.location.href='./reservation.html'">Réserver un petit déjeuner</a></button>
+                <a href="#" class="cta-button"onclick="window.location.href='/html2/contact.php'">Réserver un petit déjeuner</a></button>
             </div>
             <div class="image-slideshow">
                 <div class="slideshow-container">

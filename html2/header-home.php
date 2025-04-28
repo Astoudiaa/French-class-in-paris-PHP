@@ -27,7 +27,7 @@
   <a href="/html2/contact.php" <%= page === 'contact' ? 'class="active"' : '' %>Contact
   <a href="/petit-dejeuner" <%= page === 'petit-dejeuner' ? 'class="active"' : '' %></a>
   <a href="/cours-individuel" <%= page === 'cours-individuel' ? 'class="active"' : '' %></a>
-<button class="hero-button" onclick="window.location.href='/html2/reservation.php'">Réserver</button>
+<button class="hero-button" onclick="window.location.href='/html2/contact.php'">Réserver</button>
 </nav>
 
     <script src="../public/js/navbar.js"></script> <!-- Inclure le script JS -->

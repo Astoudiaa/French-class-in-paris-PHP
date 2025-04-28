@@ -25,13 +25,12 @@
                 Venez vivre une expérience unique et détendue pour apprendre le français tout en dégustant un délicieux goûter à deux pas du Louvre et des quais de Seine. Loin des cours classiques, ici, on échange autour d’une délicieuse pâtisserie et d’un bon café dans une ambiance conviviale et authentique.
                 Peu importe votre niveau, je vous accompagne pour discuter, tout en apprenant la langue de manière naturelle. Le tout, dans un cadre chaleureux et plein de charme, au cœur de Paris. Une manière agréable et différente de pratiquer le français tout en découvrant les saveurs et l’atmosphère de Paris.
             </p>
-                <a href="#" class="cta-button"onclick="window.location.href='./reservation.html'">Réserver un Goûter</a></button>
+                <a href="#" class="cta-button"onclick="window.location.href='/html2/contact.php'">Réserver un Goûter</a></button>
             </div>
             <div class="image-slideshow">
                 <div class="slideshow-container">
                     <img src="/public/img/cours-gouter.jpeg" alt="Petit déjeuner parisien 1" class="slide">
                     <img src="/public/img/Gouter.jpeg" alt="Petit déjeuner parisien 2" class="slide">
-                
                     <img src="/public/img/Gouter.jpeg" alt="Petit déjeuner parisien 4" class="slide">
                     <img src="/public/img/cours-gouter.jpeg" alt="Petit déjeuner parisien 1" class="slide">
                     <img src="/public/img/cathedrale.jpeg" alt="Petit déjeuner parisien 6" class="slide">
@@ -75,7 +74,7 @@
 
     
     </main>
-<script src="/public/js/petit-dej.js"></script>
+<script src="../public/js/petit-dej.js"></script>
 
 </body>
 </html>

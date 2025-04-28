@@ -27,7 +27,6 @@
     <div class="presentation-container">
         <img src="/public/img/cour-individuel2.jpeg" alt="Salle de classe" class="presentation-image">
         <img src="/public/img/cours-individuel.jpeg" alt="Professeur et étudiant" class="presentation-image">
-
     </div>
 </section>
             <div class="tarifs-container">
@@ -36,7 +35,7 @@
                         <h3>Tarifs individuels en Présentiel</h3>
                         <span class="tarif-icon"><i class="fas fa-chalkboard-teacher"></i></span>
                     </div>
-                    <section class="presentation">
+                 
 
                     <div class="tarif-details">
                         <div class="tarif-item">
@@ -57,7 +56,7 @@
                    
                     </div>
           
-                    <a href="./reservation" class="btn-gold">Réserver</a>
+                    <a href='/html2/contact.php' class="btn-gold">Réserver</a>
                 </div>
                 </div>   
 
@@ -87,7 +86,7 @@
                         </div>
                     </div>
                     
-                    <a href="./reservation" class="btn-gold">Réserver</a>
+                    <a href='/html2/contact.php' class="btn-gold">Réserver</a>
                 </div>
                 </div>
                 <script src="../public/js/navbar.js"></script>

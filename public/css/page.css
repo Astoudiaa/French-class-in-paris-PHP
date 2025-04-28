@@ -363,6 +363,7 @@ nav {
     color: var(--text-light);
 }
 
+
 /* Section Tarifs */
 .tarifs {
     background-color: var(--background-light);
@@ -492,7 +493,6 @@ nav {
     transition: var(--transition);
 }
 
-/* Section Présentation */
 .presentation {
     margin: 40px auto;
     padding: 20px;
@@ -514,20 +514,27 @@ nav {
     transition: transform 0.3s ease-in-out;
 }
 
-.presentation-image:hover {
-    transform: scale(1.05); /* Petit zoom au survol */
+
+
+/* Responsive pour les petits écrans (max-width: 768px) */
+@media (max-width: 768px) {
+    .presentation {
+        margin: 20px auto; /* Ajuste la marge globale */
+        padding: 15px; /* Réduit le padding pour les petits écrans */
+    }
+
+    /* Ajuste les éléments enfants pour une meilleure présentation */
+    .presentation-container {
+        gap: 10px; /* Réduit l'espace entre les images */
+    }
+
+    .presentation-image {
+        width: 100%; /* Les images prennent toute la largeur */
+        height: auto;
+    }
 }
-.image-intro {
-    margin-top: 30px;
-    font-size: 18px;
-    font-style: italic;
-    color: #444;
-    max-width: 90%; /* Augmente la largeur du texte à 90% */
-    margin: 20px 4%; /* Réduit la marge à gauche et à droite à 5% */
-    line-height: 1.8;
-    font-family: 'Playfair Display', serif;
-    text-align: justify; /* Justifie le texte */
-}
+
+
 
 .tarifs-groupe .tarif-header {
     display: flex;
@@ -539,7 +546,8 @@ nav {
 }
 
 .tarifs-groupe .tarif-header h3 {
-    font-size: 22px; }
+    font-size: 22px;
+}
 
 .tarifs-groupe .tarif-icon {
     width: 50px;
@@ -577,7 +585,8 @@ nav {
     display: block;
     font-size: 14px;
     color: var(--text-light);
-    margin-top: 5px;}
+    margin-top: 5px;
+}
 
 .tarifs-groupe .btn-gold {
     width: 100%;
@@ -587,6 +596,57 @@ nav {
 .tarifs-groupe .btn-gold:hover {
     background-color: #e6b800;
 }
+/* Responsive pour les écrans petits (mobile) */
+@media (max-width: 768px) {
+    .presentation {
+        margin: 20px auto; /* Réduit la marge au-dessus et en dessous de la section */
+        padding: 20px; /* Garde le padding à l'intérieur de la section */
+    }
+
+    .tarifs-groupe {
+        margin-top: 10px; /* Réduit l'espace entre la section présentation et les tarifs */
+    }
+
+    .tarifs-groupe .tarif-header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .tarifs-groupe .tarif-header h3 {
+        font-size: 18px; /* Réduit la taille de l'header */
+    }
+
+    .tarifs-groupe .tarif-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        margin-bottom: 10px; /* Ajoute un peu d'espace en dessous de l'icône */
+    }
+
+    .tarifs-groupe .tarif-item {
+        padding: 10px 0;
+    }
+
+    .tarifs-groupe .tarif-name {
+        font-size: 1em; /* Réduit la taille de police */
+    }
+
+    .tarifs-groupe .tarif-price {
+        font-size: 20px; /* Réduit la taille de la police pour le prix */
+    }
+
+    .tarifs-groupe .tarif-note {
+        font-size: 12px; /* Réduit la taille de la note */
+    }
+
+    .tarifs-groupe .btn-gold {
+        width: auto; /* Ajuste la largeur du bouton */
+        padding: 10px 20px; /* Ajoute un peu de padding pour mieux l'adapter */
+        margin-bottom: 10px; /* Réduit l'espace sous le bouton */
+    }
+}
+
 
 
 /* Pourquoi section */
@@ -850,4 +910,370 @@ footer {
     background-color: rgba(212, 175, 55, 0.1);
     margin-top: 50px;
   }
+  
+/* Media Queries */
+@media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      padding: 15px 20px;
+    }
+  
+    .navigation {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      margin-top: 1rem;
+    }
+  
+    .navigation.responsive {
+      display: flex;
+    }
+  
+  
+  
+    .reserve-button {
+      margin: 15px 0 0 0;
+    }
+  
+    .photo-container {
+      max-width: 100%;
+    }
+  
+    .bio::after .parcours, .parcours-bis, .parcours-pro, .parcours-perso, .parcours-perso-bis {
+      padding: 20px;
+    }
+  }
+  
+  /* Responsive CSS - Include this after your main CSS file */
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  
+  @media only screen and (max-width: 600px) {
+    .header {
+      padding: 10px 20px;
+    }
+    
+    .name h1 {
+      font-size: 32px;
+    }
+    
+    .navigation {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      height: 100vh;
+      width: 70%;
+      background: linear-gradient(135deg, #f0e6dd 0%, #e7d0ae 100%);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 0;
+      transition: right 0.3s ease;
+      z-index: 100;
+    }
+    
+    .navigation.active {
+      right: 0;
+    }
+    
+    .navigation a {
+      margin: 15px 0;
+      font-size: 20px;
+    }
+    
+    .menu-toggle {
+      display: flex;
+      z-index: 101;
+    }
+    
+    .menu-toggle.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .menu-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .menu-toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    main {
+      padding: 0 15px;
+    }
+    
+    .text {
+      padding: 30px 10px 10px;
+    }
+    
+    .text-propos {
+      font-size: 36px;
+    }
+    
+    /* Modified to preserve images but adjust layout */
+    .bio,.bio:after, .presentation, .parcours, .parcours-bis, .parcours-pro, .parcours-perso, .parcours-perso-bis {
+      padding: 1rem;
+      margin: 2rem auto;
+      transform: none;
+    }
+    
+    /* Instead of hiding images, reposition them */
+    .bio {
+      padding-top: 350px; /* Make space for the image above */
+      position: relative;
+    }
+    
+    .bio::after {
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 250px;
+      height: 320px;
+      position: absolute;
+    }
+    
+    .presentation {
+      padding-bottom: 350px; /* Make space for the image below */
+      position: relative;
+    }
+    
+    .presentation:after {
+      top: auto;
+      bottom: 0;
+      right: 50%;
+      transform: translateX(50%);
+      width: 250px;
+      height: 320px;
+      position: absolute;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 601px) and (max-width: 768px) {
+    .header {
+      padding: 12px 25px;
+    }
+    
+    .navigation {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      height: 100vh;
+      width: 60%;
+      background: linear-gradient(135deg, #f0e6dd 0%, #e7d0ae 100%);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 0;
+      transition: right 0.3s ease;
+      z-index: 100;
+    }
+    
+    .navigation.active {
+      right: 0;
+    }
+    
+    .navigation a {
+      margin: 12px 0;
+      font-size: 18px;
+    }
+    
+    .name h1 {
+      font-size: 36px;
+    }
+    
+    /* Keep images but reposition */
+    .bio {
+      display: flex;
+      flex-direction: column;
+      margin-top: 240px;
+      position: relative;
+    }
+    
+  
+    @media screen and (max-width: 768px) {
+      .bio::after {
+        top: -80px; /* remonte l'image sur mobile */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 180px;
+        height: 220px;
+      }
+    }
+    
+    .presentation {
+      margin-bottom: 240px;
+      position: relative;
+    }
+    
+    .presentation:after {
+      top: auto;
+      bottom: -220px;
+      right: 50%;
+      transform: translateX(50%);
+      width: 200px;
+      height: 220px;
+    }
+    
+    .parcours-bis, .parcours-pro, .parcours-perso-bis {
+      margin-left: 0;
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+    /* Position bio image slightly differently but keep it visible */
+    .bio {
+      margin-left: 260px;
+      position: relative;
+    }
+    
+    .bio::after {
+      width: 250px;
+      height: 280px;
+      left: -260px;
+    }
+    
+    /* Position presentation image */
+    .presentation {
+      margin-right: 260px;
+      position: relative;
+    }
+    
+    .presentation:after {
+      width: 250px;
+      height: 280px;
+      right: -260px;
+    }
+    
+    .parcours-bis, .parcours-pro, .parcours-perso-bis {
+      margin-left: 0;
+    }
+  }
+  
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav-links a:hover {
+    color: #ddd;
+  }
+  
+  
+  /* Style du sélecteur de langues */
+  .language-selector {
+    position: relative;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  
+  .current-language {
+    display: flex;
+    align-items: center;
+    padding: 5px 8px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .flag-emoji, #current-flag {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+  
+  .arrow {
+    font-size: 10px;
+    margin-left: 3px;
+  }
+  
+  .language-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 100px;
+    display: none;
+    z-index: 1000;
+  }
+  
+  .language-selector:hover .language-dropdown {
+    display: block;
+  }
+  
+  .language-option {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.2s;
+  }
+  
+  .language-option:hover {
+    background-color: #f5f5f5;
+  }
+  
+  
+  /* Adapter pour mobile */
+  @media (max-width: 768px) {
+    .language-selector {
+      margin: 10px 0;
+    }
+    
+    .language-dropdown {
+      position: static;
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .bio {
+      position: relative;  }
+  
+    .bio::after {
+    
+      width: 230px;
+      height: 250px;
+      right: -260px;
+      background-image: url('../img/Dalila-profil.jpeg');
+      background-position: right center;  /* Décalage vers la droite */
+      left: 0;
+      top: 0;
+  
+   /* Ajuster cette hauteur selon tes préférences */
+      z-index: -1;
+    }
+  }
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(212, 175, 55, 0.1);
+    margin-top: 50px;
+  }
+  
+  
+  
+  
+
+
+
+
+
+
+
   

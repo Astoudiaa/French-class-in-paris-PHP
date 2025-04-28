@@ -13,16 +13,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="main-content">
 <?php include 'header.php'; ?>
 <section class="realisations">
         <div class="container">
         <div class="subtitle-container">
-    
-         
          <p class="subtitle"><strong>Apprendre le français</strong>  est bien plus qu’un simple exercice linguistique : c’est une porte ouverte sur une culture, une élégance et une aisance qui vous permettront d’évoluer avec confiance dans un environnement francophone.</p> 
          <p class="subtitle"><strong>Mon engagement</strong>  est de vous offrir un enseignement de qualité, allié à une grande flexibilité. Que ce soit en ligne ou en présentiel, nous adaptons ensemble le format et les horaires pour répondre à vos exigences.</p>
          <p class="subtitle"><strong> Maîtriser le français</strong>  avec aisance et distinction, c’est possible. Ensemble, faisons de votre apprentissage une réussite aussi fluide qu’enrichissante. N’hésitez pas à me contacter afin de définir ensemble le programme qui vous correspond.
-
 </p>
 
     <div class="container">
@@ -95,13 +93,16 @@
                 </div>
             </div>
         </div>
+        </div>
+  
 
         <a href="/html2/reservation.php" class="btn-gold">Réserver</a>
     </section>
-     
+      <!-- Inclure le footer -->
+      <?php include 'footer.php'; ?>
+    
     <script src="../public/js/cours.js"></script>
     <script src="../public/js/navbar.js"></script>
-    <!-- Inclure le footer -->
-    <?php include 'footer.php'; ?>
+
 </body>
 </html>

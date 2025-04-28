@@ -1,5 +1,8 @@
+<?php
+require_once __DIR__ . '/../language.php';
+?>
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="<?php echo $currentLang; ?>">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,11 +27,11 @@
         
         <div class="fade-in"> 
             <div class="bio">
-           <p>Je m'appelle <strong>Dalila</strong> , fondatrice de <i>French Class in Paris</i> et professeure diplômée du <strong>Diplôme d’Aptitude à l’Enseignement du Français Langue Etrangère </strong> (de Alliance Française de Paris). Depuis plus de 10 ans, j’accompagne des apprenants du monde entier dans l’apprentissage du français — pas à travers des manuels rigides, mais avec une approche <strong>humaine, sur-mesure et profondément vivante </strong>.</p>
+           <p>Je m'appelle <strong>Dalila</strong>, fondatrice de <i>French Class in Paris</i> et professeure diplômée du <strong>Diplôme d’Aptitude à l’Enseignement du Français Langue Etrangère </strong> (de l'alliance Française de Paris). Depuis plus de 10 ans, j’accompagne des apprenants du monde entier dans l’apprentissage du français — pas à travers des manuels rigides, mais avec une approche <strong>humaine, sur-mesure et profondément vivante </strong>.</p>
            </div>
 
             <div class="presentation">
-                <p> Mon parcours m’a menée à enseigner à des profils très variés : <strong>expatriés, diplomates, professionnels en mobilité, candidats à des examens officiels</strong>, ou encore amoureux de la langue française. Ma pédagogie est née d’une conviction simple : <strong>le français ne s’enseigne pas, il se transmet, il se vit</strong>. Mon rôle n’est pas de faire réciter des règles, mais de vous aider à vous <strong>exprimer avec aisance, naturel et plaisir</strong>. Avec moi, <strong>pas de cours académiques standardisés</strong>, mais des sessions construites autour de vous, vos besoins, votre rythme, vos objectifs — qu’ils soient personnels, professionnels, ou académiques.</p>
+                <p> Mon parcours m’a menée à enseigner à des profils très variés : <strong>expatriés, diplomates, professionnels en mobilité, candidats à des examens officiels</strong>, ou encore amoureux de la langue française. Ma pédagogie est née d’une conviction simple : <strong>le français ne s’enseigne pas, il se transmet, il se vit</strong>. Mon rôle n’est pas de faire réciter des règles, mais de vous aider à vous <strong>exprimer avec aisance, naturel et plaisir</strong>.  Avec moi, <strong>pas de cours académiques standardisés</strong>, mais des sessions construites autour de vous, vos besoins, votre rythme, vos objectifs — qu’ils soient personnels, professionnels, ou académiques.</p>
             </div>
 
     

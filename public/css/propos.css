@@ -184,9 +184,8 @@ body {
 
 .text {
   text-align: center;
-padding: 40px 20px 20px;
+  padding: 40px 20px 20px;
   color: black;
-
   text-align: center;
   position: relative;
  
@@ -279,7 +278,6 @@ padding: 40px 20px 20px;
   position: relative; /* Nécessaire pour que le z-index fonctionne */
 }
 
-
 .parcours-bis{
  
     max-width: 1000px;
@@ -291,7 +289,6 @@ padding: 40px 20px 20px;
     font-family: 'Playfair Display', serif;
    
 }
-
 
 .parcours-pro {
   max-width: 1000px;
@@ -365,9 +362,11 @@ padding: 40px 20px 20px;
 
 footer {
   text-align: center;
+   color: black;
   padding: 20px;
   background-color: rgba(212, 175, 55, 0.1);
   margin-top: 50px;
+  font-family: 'Playfair Display', 'Times New Roman', serif;
 }
 
 
@@ -561,12 +560,6 @@ footer {
       height: 220px;
     }
   }
-  
-
-
-
-
-
   
   .presentation {
     margin-bottom: 240px;

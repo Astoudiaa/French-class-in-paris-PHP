@@ -1,91 +1,63 @@
 <?php
-// Inclure la configuration
-require_once __DIR__ . '/config.php';
+// Fichier : language.php
 
-// Fonction pour détecter la langue
-function detectLanguage() {
-    global $available_languages, $default_language;
-    
-    // Vérifier si une langue est spécifiée dans l'URL (?lang=xx)
-    if (isset($_GET['lang']) && in_array($_GET['lang'], $available_languages)) {
-        // Stocker la préférence dans un cookie (valable 30 jours)
-        setcookie('preferred_language', $_GET['lang'], time() + (86400 * 30), "/");
-        return $_GET['lang'];
+ 
+
+// Fonction pour obtenir la langue actuelle
+function getCurrentLanguage() {
+    // Priorité 1 : paramètre GET
+    if (isset($_GET['lang'])) {
+        $lang = $_GET['lang'];
+        // Stocker la langue dans un cookie
+        setcookie('selectedLanguage', $lang, time() + 31536000, '/');
+        return $lang;
     }
     
-    // Vérifier si une préférence est stockée dans un cookie
-    if (isset($_COOKIE['preferred_language']) && in_array($_COOKIE['preferred_language'], $available_languages)) {
-        return $_COOKIE['preferred_language'];
+    // Priorité 2 : cookie existant
+    if (isset($_COOKIE['selectedLanguage'])) {
+        return $_COOKIE['selectedLanguage'];
     }
     
-    // Vérifier l'en-tête HTTP Accept-Language
-    if (isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
-        $browser_langs = explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE']);
-        foreach ($browser_langs as $browser_lang) {
-            $browser_lang = substr($browser_lang, 0, 2); // Prendre les 2 premiers caractères
-            if (in_array($browser_lang, $available_languages)) {
-                return $browser_lang;
-            }
-        }
+    // Priorité 3 : langue du navigateur
+    $browserLang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+    if (in_array($browserLang, ['fr', 'en', 'es', 'pt'])) {
+        return $browserLang;
     }
     
-    // Utiliser la langue par défaut si aucune correspondance n'est trouvée
-    return $default_language;
+    // Langue par défaut
+    return 'fr';
 }
 
-// Créer les dossiers de langue s'ils n'existent pas
-$languages_dir = $languages_basepath;
-if (!file_exists($languages_dir)) {
-    mkdir($languages_dir, 0755, true);
+// Fonction pour charger les traductions
+function loadTranslations($lang) {
+    $translations = [];
     
-    foreach ($available_languages as $lang) {
-        if (!file_exists("$languages_dir/$lang")) {
-            mkdir("$languages_dir/$lang", 0755, true);
-        }
-    }
-}
-
-// Détecter la langue
-$current_language = detectLanguage();
-
-// Chemin vers le fichier de langue
-$lang_file = "$languages_dir/$current_language/lang.php";
-
-// Vérifier si le fichier de langue existe, sinon utiliser le fichier de langue par défaut
-if (!file_exists($lang_file)) {
-    // Si le fichier n'existe pas encore, créons un fichier vide
-    if (!file_exists(dirname($lang_file))) {
-        mkdir(dirname($lang_file), 0755, true);
+    // Charger le fichier de traduction correspondant à la langue
+    $filePath = __DIR__ . "/../translations/{$lang}.php";
+    
+    if (file_exists($filePath)) {
+        $translations = include $filePath;
+    } else {
+        // Fallback sur le français si le fichier n'existe pas
+        $translations = include __DIR__ . "/translations/fr.php";
     }
     
-    // Créer un fichier de langue vide
-    file_put_contents($lang_file, "<?php\n\$lang = [];\n?>");
+    return $translations;
 }
 
-// Charger le fichier de langue
-require_once $lang_file;
-
-// Fonction de traduction
+// Fonction pour obtenir une traduction
 function __($key) {
-    global $lang, $current_language, $default_language, $languages_basepath;
+    global $translations;
     
-    if (isset($lang[$key])) {
-        return $lang[$key];
+    if (isset($translations[$key])) {
+        return $translations[$key];
     }
     
-    // Si la clé n'existe pas et que nous ne sommes pas dans la langue par défaut,
-    // essayons de charger la clé depuis la langue par défaut
-    if ($current_language != $default_language) {
-        $default_lang_file = "$languages_basepath/$default_language/lang.php";
-        if (file_exists($default_lang_file)) {
-            include $default_lang_file;
-            if (isset($lang[$key])) {
-                return $lang[$key];
-            }
-        }
-    }
-    
-    // Si la clé n'existe toujours pas, retourner la clé elle-même
+    // Retourner la clé si la traduction n'existe pas
     return $key;
 }
+
+// Initialisation
+$currentLang = getCurrentLanguage();
+$translations = loadTranslations($currentLang);
 ?>

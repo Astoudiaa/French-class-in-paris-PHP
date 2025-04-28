@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="main-content">
+<div class="content">
 
 <?php include 'header.php'; ?>
 
@@ -49,9 +51,10 @@
             </div>
            
     </div>
+    </div>
+    </div>
    <!-- Inclure le footer -->
-   <script src="../public/js/navbar.js"></script>
-
+ 
 <p class="footer-experiences"> &copy; 2025 French Class In Paris Dalila Raposo - Tous droits réservés</p>
 
 </body>
